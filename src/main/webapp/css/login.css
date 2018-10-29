@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+
+body{
+	font-family: Consolas;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	margin: 230px auto;
+}
+.div_out{
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.div_in{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+#userId, #pass{
+	border: 2px solid;
+	width: 200px;
+	height: 30px;
+	margin: 10px;
+}
+
+#login_btn{
+	width: 60px;
+	height: 28px;
+	font-family: Consolas;
+}
+h1{
+	margin-top: 0px;
+	margin-bottom: 80px;
+}

@@ -1,0 +1,3 @@
+PostsServlet.java
+left.jsp
+posts.jsp

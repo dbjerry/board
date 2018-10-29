@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="posts">
+
+	<!-- 페이징처리 -->
+	<select id="postsPageList" parameterType="Map" resultType="postsvo">
+		SELECT  *
+		FROM    (
+		        SELECT  ROWNUM rnum,
+		                A.*
+		        FROM    (
+		                SELECT  posts_no,
+		                        board_id,
+		                        posts_use,
+		                        LPAD('┗', (LEVEL-1)*3, '　') || posts_title posts_title,
+		                        posts_cnt,
+		                        userid,
+		                        TO_CHAR(posts_date, 'yyyy.mm.dd hh:mi:ss') posts_date,
+		                        posts_hno,
+		                        group_no
+		                FROM    posts
+		                START WITH posts_hno IS NULL
+		                CONNECT BY PRIOR posts_no = posts_hno
+		                ORDER SIBLINGS BY group_no desc, posts_date asc
+		                ) A
+		        WHERE	board_id = #{boardvo.board_id}
+		        )
+		WHERE   rnum BETWEEN #{pagevo.page} * #{pagevo.pageSize} - (#{pagevo.pageSize}-1) AND #{pagevo.page} * #{pagevo.pageSize}
+	</select>
+
+	<!-- 해당 게시판의 게시글 총 갯수 -->
+	<select id="postsCnt" parameterType="String" resultType="int">
+		SELECT	COUNT(*)
+		FROM	posts
+		WHERE	board_id = #{board_id}
+	</select>
+	
+	<!-- 본글작성시 -->
+	<insert id="insertParentPosts" parameterType="postsvo">
+		INSERT INTO posts (
+						posts_no, board_id, posts_use, 
+						posts_title, posts_cnt, userid, 
+						posts_date, group_no)
+		VALUES (LPAD(posts_seq.NEXTVAL, 5, 0), #{board_id}, 'Y', 
+				#{posts_title}, #{posts_cnt}, #{userid}, 
+				SYSDATE, group_seq.NEXTVAL)
+	</insert>
+	
+	<!-- 답글작성시 -->
+	<insert id="insertChildPosts" parameterType="postsvo">
+		INSERT INTO posts (
+						posts_no, board_id, posts_use, 
+						posts_title, posts_cnt, userid, 
+						posts_date, posts_hno)
+		VALUES (LPAD(posts_seq.NEXTVAL, 5, 0), #{board_id}, 'Y', 
+				#{posts_title}, #{posts_cnt}, #{userid}, 
+				SYSDATE, #{posts_hno})
+	</insert>
+	
+	<!-- 게시글 상세보기 -->
+	<select id="getPostsDetail" parameterType="String" resultType="postsvo">
+		SELECT	posts_no,
+				board_id,
+				posts_use,
+				posts_title,
+				posts_cnt,
+				userid,
+				TO_CHAR(posts_date, 'yyyy-MM-dd hh:mi:ss') posts_date,
+				posts_hno,
+				group_no
+		FROM	posts
+		WHERE	posts_no = #{posts_no}
+	</select>
+	
+	<!-- 게시글 수정 -->
+	<update id="updatePosts" parameterType="postsvo">
+		UPDATE	posts
+		SET		posts_cnt = #{posts_cnt}
+		WHERE	posts_no = #{posts_no}
+	</update>
+	
+	<!-- 게시글 삭제 구분 수정 -->
+	<update id="updateUse" parameterType="String">
+		UPDATE	posts
+		SET		posts_use = 'N',
+				posts_title = '삭제된 게시글입니다.'
+		WHERE	posts_no = #{posts_no}
+	</update>
+	
+	<!-- 게시글 최신 번호 -->
+	<select id="maxPosts" parameterType="String" resultType="String">
+		SELECT	MAX(posts_no)
+		FROM	posts
+		WHERE	board_id = #{board_id}
+	</select>
+	
+</mapper>
+

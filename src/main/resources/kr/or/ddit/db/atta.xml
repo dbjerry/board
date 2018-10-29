@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="atta">
+
+	<!-- 첨부파일 등록 -->
+	<insert id="insertAtta" parameterType="attavo">
+		INSERT INTO attachments (atta_no, atta_file, posts_no)
+		VALUES (LPAD(atta_seq.NEXTVAL, 5, 0), #{atta_file}, #{posts_no})
+	</insert>
+
+	<!-- 해당 게시글의 첨부파일 조회 -->
+	<select id="selectAtta" parameterType="String" resultType="attavo">
+		SELECT	/*+ INDEX(attachments idx_attach_01) */ *
+		FROM	attachments
+		WHERE	posts_no = #{posts_no}
+	</select>
+	
+	<!-- 첨부파일 삭제 -->
+	<delete id="deleteAtta" parameterType="String">
+		DELETE
+		FROM	attachments	
+		WHERE	atta_no = #{atta_no}
+	</delete>
+	
+</mapper>
+
