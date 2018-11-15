@@ -13,7 +13,7 @@ public class PostsDao implements IPostsDao{
 
 	/**
 	 * Method : postsPageList
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param pagevo
 	 * @return
@@ -33,7 +33,7 @@ public class PostsDao implements IPostsDao{
 
 	/**
 	 * Method : postsCnt
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param boardId
 	 * @return
@@ -53,7 +53,7 @@ public class PostsDao implements IPostsDao{
 
 	/**
 	 * Method : insertParentPosts
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param postsvo
 	 * @return
@@ -74,7 +74,7 @@ public class PostsDao implements IPostsDao{
 
 	/**
 	 * Method : insertChildPosts
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param postsvo
 	 * @return
@@ -95,7 +95,7 @@ public class PostsDao implements IPostsDao{
 
 	/**
 	 * Method : getPostsDetail
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param postsno
 	 * @return
@@ -115,7 +115,7 @@ public class PostsDao implements IPostsDao{
 
 	/**
 	 * Method : updatePosts
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param postsvo
 	 * @return
@@ -136,7 +136,7 @@ public class PostsDao implements IPostsDao{
 
 	/**
 	 * Method : updateUse
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param postsno
 	 * @return
@@ -157,7 +157,7 @@ public class PostsDao implements IPostsDao{
 
 	/**
 	 * Method : maxPosts
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @return
 	 * Method 설명 : 게시글 최신번호

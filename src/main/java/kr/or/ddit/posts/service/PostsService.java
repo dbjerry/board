@@ -19,7 +19,7 @@ public class PostsService implements IPostsService{
 	
 	/**
 	 * Method : postsPageList
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param pagevo
 	 * @return
@@ -46,7 +46,7 @@ public class PostsService implements IPostsService{
 
 	/**
 	 * Method : postsCnt
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param boardId
 	 * @return
@@ -59,7 +59,7 @@ public class PostsService implements IPostsService{
 
 	/**
 	 * Method : insertParentPosts
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param postsvo
 	 * @return
@@ -72,7 +72,7 @@ public class PostsService implements IPostsService{
 
 	/**
 	 * Method : insertChildPosts
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param postsvo
 	 * @return
@@ -85,7 +85,7 @@ public class PostsService implements IPostsService{
 
 	/**
 	 * Method : getPostsDetail
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param postsno
 	 * @return
@@ -98,7 +98,7 @@ public class PostsService implements IPostsService{
 
 	/**
 	 * Method : updatePosts
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param postsvo
 	 * @return
@@ -123,7 +123,7 @@ public class PostsService implements IPostsService{
 
 	/**
 	 * Method : updateUse
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param postsno
 	 * @return
@@ -136,7 +136,7 @@ public class PostsService implements IPostsService{
 
 	/**
 	 * Method : maxPosts
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @return
 	 * Method 설명 : 게시글 최신번호

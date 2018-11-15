@@ -1,6 +1,5 @@
 package kr.or.ddit.posts.service;
 
-import java.util.List;
 import java.util.Map;
 
 import kr.or.ddit.posts.model.PostsVO;
@@ -9,7 +8,7 @@ public interface IPostsService {
 	
 	/**
 	 * Method : postsPageList
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param pagevo
 	 * @return
@@ -19,7 +18,7 @@ public interface IPostsService {
 	
 	/**
 	 * Method : postsCnt
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param boardId
 	 * @return
@@ -29,7 +28,7 @@ public interface IPostsService {
 	
 	/**
 	 * Method : insertParentPosts
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param postsvo
 	 * @return
@@ -39,7 +38,7 @@ public interface IPostsService {
 	
 	/**
 	 * Method : insertChildPosts
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param postsvo
 	 * @return
@@ -49,7 +48,7 @@ public interface IPostsService {
 	
 	/**
 	 * Method : getPostsDetail
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param postsno
 	 * @return
@@ -59,7 +58,7 @@ public interface IPostsService {
 
 	/**
 	 * Method : updatePosts
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param postsvo
 	 * @return
@@ -69,7 +68,7 @@ public interface IPostsService {
 
 	/**
 	 * Method : updateUse
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param postsno
 	 * @return
@@ -79,7 +78,7 @@ public interface IPostsService {
 	
 	/**
 	 * Method : maxPosts
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @return
 	 * Method 설명 : 게시글 최신번호

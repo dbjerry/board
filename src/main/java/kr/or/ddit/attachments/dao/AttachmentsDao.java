@@ -12,7 +12,7 @@ public class AttachmentsDao implements IAttachmentsDao {
 
 	/**
 	 * Method : insertAtta
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @return
 	 * Method 설명 : 첨부파일 등록
@@ -32,7 +32,7 @@ public class AttachmentsDao implements IAttachmentsDao {
 
 	/**
 	 * Method : selectAtta
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @return
 	 * Method 설명 : 해당 게시글의 첨부파일 조회
@@ -51,7 +51,7 @@ public class AttachmentsDao implements IAttachmentsDao {
 
 	/**
 	 * Method : deleteAtta
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param attano
 	 * @return

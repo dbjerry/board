@@ -9,7 +9,7 @@ public interface IPostsDao {
 
 	/**
 	 * Method : postsPageList
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param pagevo
 	 * @return
@@ -19,7 +19,7 @@ public interface IPostsDao {
 	
 	/**
 	 * Method : postsCnt
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param boardId
 	 * @return
@@ -29,7 +29,7 @@ public interface IPostsDao {
 
 	/**
 	 * Method : insertParentPosts
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param postsvo
 	 * @return
@@ -39,7 +39,7 @@ public interface IPostsDao {
 	
 	/**
 	 * Method : insertChildPosts
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param postsvo
 	 * @return
@@ -49,7 +49,7 @@ public interface IPostsDao {
 	
 	/**
 	 * Method : getPostsDetail
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param postsno
 	 * @return
@@ -59,7 +59,7 @@ public interface IPostsDao {
 	
 	/**
 	 * Method : updatePosts
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param postsvo
 	 * @return
@@ -69,7 +69,7 @@ public interface IPostsDao {
 	
 	/**
 	 * Method : updateUse
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param postsno
 	 * @return
@@ -79,7 +79,7 @@ public interface IPostsDao {
 	
 	/**
 	 * Method : maxPosts
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @return
 	 * Method 설명 : 게시글 최신번호

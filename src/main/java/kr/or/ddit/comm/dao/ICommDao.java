@@ -8,7 +8,7 @@ public interface ICommDao {
 
 	/**
 	 * Method : insertComm
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param commvo
 	 * @return
@@ -18,7 +18,7 @@ public interface ICommDao {
 	
 	/**
 	 * Method : selectComm
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param postsno
 	 * @return
@@ -28,7 +28,7 @@ public interface ICommDao {
 	
 	/**
 	 * Method : updateComm
-	 * 작성자 : 김지태
+	 * 작성자 : jerry
 	 * 변경이력 :
 	 * @param commid
 	 * @return
