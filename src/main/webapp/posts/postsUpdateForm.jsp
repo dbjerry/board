@@ -27,6 +27,7 @@
 							fCreator : "createSEditor2", // SE2BasicCreator.js 메소드명이니 변경 금지 X
 							htParams : {
 								// 툴바 사용 여부 (true:사용/ false:사용하지 않음)
+								
 								bUseToolbar : true,
 								// 입력창 크기 조절바 사용 여부 (true:사용/ false:사용하지 않음)
 								bUseVerticalResizer : true,

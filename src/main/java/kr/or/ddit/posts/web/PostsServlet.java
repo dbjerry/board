@@ -200,14 +200,14 @@ public class PostsServlet extends HttpServlet {
 	private void updateAttachFile(HttpServletRequest request,
 			HttpServletResponse response) throws IOException, ServletException {
 		request.setCharacterEncoding("UTF-8");
-		
+
 		String attano = request.getParameter("attaFileName");
-		
+
 		IAttachmentsService attaService = new AttachmentsService();
 		attaService.deleteAtta(attano);
-		
+
 		request.getRequestDispatcher("/posts/postsUpdateForm.jsp").forward(request, response);
-		
+
 	}
 
 

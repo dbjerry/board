@@ -1,0 +1,1694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Metrics scope="board" type="Project" date="2018-11-19" xmlns="http://metrics.sourceforge.net/2003/Metrics-First-Flat">
+   <Cycle name="kr.or.ddit.board.service et al" nodes="10" diameter="4">
+      <Package>kr.or.ddit.board.service</Package>
+      <Package>kr.or.ddit.board.dao</Package>
+      <Package>kr.or.ddit.db</Package>
+      <Package>kr.or.ddit.user.service</Package>
+      <Package>kr.or.ddit.user.dao</Package>
+      <Package>kr.or.ddit.comm.service</Package>
+      <Package>kr.or.ddit.comm.dao</Package>
+      <Package>kr.or.ddit.posts.service</Package>
+      <Package>kr.or.ddit.attachments.dao</Package>
+      <Package>kr.or.ddit.posts.dao</Package>
+   </Cycle>
+   <Metric id = "VG" description ="McCabe Cyclomatic Complexity" max ="10" hint ="use Extract-method to split the method up">
+      <Values per = "method" avg = "1.386" stddev = "1.109" max = "10">
+         <Value name="Encrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="10"/>
+         <Value name="doPost" source ="LoginServlet.java" package ="kr.or.ddit.login" value ="7"/>
+         <Value name="Decrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="6"/>
+         <Value name="main" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="6"/>
+         <Value name="doPost" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="6"/>
+         <Value name="removePadding" source ="AnsiX923Padding.java" package ="kr.or.ddit.encrypt.seed" value ="5"/>
+         <Value name="postsUpdate" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="5"/>
+         <Value name="Decrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="4"/>
+         <Value name="SeedDecrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="4"/>
+         <Value name="SeedEncrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="4"/>
+         <Value name="SHA256_Close" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="4"/>
+         <Value name="SHA256_Transform" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="4"/>
+         <Value name="addPostsForm" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="4"/>
+         <Value name="doGet" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="4"/>
+         <Value name="doPost" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="3"/>
+         <Value name="addPadding" source ="AnsiX923Padding.java" package ="kr.or.ddit.encrypt.seed" value ="3"/>
+         <Value name="isEmpty" source ="StringUtil.java" package ="kr.or.ddit.encrypt.seed" value ="3"/>
+         <Value name="KISA_SHA256.Common#URShift" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="3"/>
+         <Value name="KISA_SHA256.Common#memcpy" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="3"/>
+         <Value name="SHA256_Process" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="3"/>
+         <Value name="getCookie" source ="StringUtil.java" package ="kr.or.ddit.util" value ="3"/>
+         <Value name="getFileName" source ="StringUtil.java" package ="kr.or.ddit.util" value ="3"/>
+         <Value name="boardInsert" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="2"/>
+         <Value name="boardUpdate" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="2"/>
+         <Value name="doGet" source ="CommServlet.java" package ="kr.or.ddit.comm.web" value ="2"/>
+         <Value name="doPost" source ="CommServlet.java" package ="kr.or.ddit.comm.web" value ="2"/>
+         <Value name="SeedRoundKey" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="2"/>
+         <Value name="addZero" source ="StringUtil.java" package ="kr.or.ddit.encrypt.seed" value ="2"/>
+         <Value name="KISA_SHA256.Common#arraycopy_offset" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="KISA_SHA256.Common#arraycopy" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="KISA_SHA256.Common#arrayinit_offset" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="KISA_SHA256.Common#arrayinit" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="KISA_SHA256.Common#byte_to_int" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="KISA_SHA256.Common#byte_to_int" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="KISA_SHA256.Common#get_byte_for_int" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="KISA_SHA256.Common#get_bytes_for_ints" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="KISA_SHA256.Common#intToUnsigned" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="KISA_SHA256.Common#int_to_byte_unit" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="KISA_SHA256.Common#memcpy" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="KISA_SHA256.Common#set_byte_for_int" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="encrypt" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="updatePosts" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="2"/>
+         <Value name="deleteAtta" source ="AttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="1"/>
+         <Value name="insertAtta" source ="AttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="1"/>
+         <Value name="selectAtta" source ="AttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="1"/>
+         <Value name="deleteAtta" source ="IAttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="1"/>
+         <Value name="insertAtta" source ="IAttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="1"/>
+         <Value name="selectAtta" source ="IAttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="1"/>
+         <Value name="getAtta_file" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="1"/>
+         <Value name="getAtta_no" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="1"/>
+         <Value name="getPosts_no" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="1"/>
+         <Value name="setAtta_file" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="1"/>
+         <Value name="setAtta_no" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="1"/>
+         <Value name="setPosts_no" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="1"/>
+         <Value name="deleteAtta" source ="AttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="1"/>
+         <Value name="insertAtta" source ="AttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="1"/>
+         <Value name="selectAtta" source ="AttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="1"/>
+         <Value name="deleteAtta" source ="IAttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="1"/>
+         <Value name="insertAtta" source ="IAttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="1"/>
+         <Value name="selectAtta" source ="IAttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="1"/>
+         <Value name="insertBoard" source ="BoardDao.java" package ="kr.or.ddit.board.dao" value ="1"/>
+         <Value name="selectAllBoard" source ="BoardDao.java" package ="kr.or.ddit.board.dao" value ="1"/>
+         <Value name="updateBoard" source ="BoardDao.java" package ="kr.or.ddit.board.dao" value ="1"/>
+         <Value name="insertBoard" source ="IBoardDao.java" package ="kr.or.ddit.board.dao" value ="1"/>
+         <Value name="selectAllBoard" source ="IBoardDao.java" package ="kr.or.ddit.board.dao" value ="1"/>
+         <Value name="updateBoard" source ="IBoardDao.java" package ="kr.or.ddit.board.dao" value ="1"/>
+         <Value name="getBoard_date" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="getBoard_id" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="getBoard_name" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="getBoard_yn" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="getUserId" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="setBoard_date" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="setBoard_id" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="setBoard_name" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="setBoard_yn" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="setUserId" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="insertBoard" source ="BoardService.java" package ="kr.or.ddit.board.service" value ="1"/>
+         <Value name="selectAllBoard" source ="BoardService.java" package ="kr.or.ddit.board.service" value ="1"/>
+         <Value name="updateBoard" source ="BoardService.java" package ="kr.or.ddit.board.service" value ="1"/>
+         <Value name="insertBoard" source ="IBoardService.java" package ="kr.or.ddit.board.service" value ="1"/>
+         <Value name="selectAllBoard" source ="IBoardService.java" package ="kr.or.ddit.board.service" value ="1"/>
+         <Value name="updateBoard" source ="IBoardService.java" package ="kr.or.ddit.board.service" value ="1"/>
+         <Value name="doGet" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="1"/>
+         <Value name="goMain" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="1"/>
+         <Value name="insertComm" source ="CommDao.java" package ="kr.or.ddit.comm.dao" value ="1"/>
+         <Value name="selectComm" source ="CommDao.java" package ="kr.or.ddit.comm.dao" value ="1"/>
+         <Value name="updateComm" source ="CommDao.java" package ="kr.or.ddit.comm.dao" value ="1"/>
+         <Value name="insertComm" source ="ICommDao.java" package ="kr.or.ddit.comm.dao" value ="1"/>
+         <Value name="selectComm" source ="ICommDao.java" package ="kr.or.ddit.comm.dao" value ="1"/>
+         <Value name="updateComm" source ="ICommDao.java" package ="kr.or.ddit.comm.dao" value ="1"/>
+         <Value name="getComm_cnt" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="getComm_date" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="getComm_id" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="getComm_use" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="getPosts_no" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="getUserid" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="setComm_cnt" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="setComm_date" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="setComm_id" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="setComm_use" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="setPosts_no" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="setUserid" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="insertComm" source ="CommService.java" package ="kr.or.ddit.comm.service" value ="1"/>
+         <Value name="selectComm" source ="CommService.java" package ="kr.or.ddit.comm.service" value ="1"/>
+         <Value name="updateComm" source ="CommService.java" package ="kr.or.ddit.comm.service" value ="1"/>
+         <Value name="insertComm" source ="ICommService.java" package ="kr.or.ddit.comm.service" value ="1"/>
+         <Value name="selectComm" source ="ICommService.java" package ="kr.or.ddit.comm.service" value ="1"/>
+         <Value name="updateComm" source ="ICommService.java" package ="kr.or.ddit.comm.service" value ="1"/>
+         <Value name="addComm" source ="CommServlet.java" package ="kr.or.ddit.comm.web" value ="1"/>
+         <Value name="updateComm" source ="CommServlet.java" package ="kr.or.ddit.comm.web" value ="1"/>
+         <Value name="getSqlSessionFactory" source ="SqlFactoryBuilder.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="getName" source ="AnsiX923Padding.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="EncRoundKeyUpdate0" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="EncRoundKeyUpdate1" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="EndianChange" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="GetB0" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="GetB1" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="GetB2" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="GetB3" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="SeedEncrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="SeedEncrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="SeedRound" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="main" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="KISA_SHA256.Common#byte_to_int_big_endian" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="KISA_SHA256.Common#int_to_byte_unit_big_endian" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="KISA_SHA256.Common#int_to_byte" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="BIG_D2B" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="Ch" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="ENDIAN_REVERSE_ULONG" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="FF" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="GetData" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="Maj" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="RHO0" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="RHO1" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="ROTL_ULONG" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="ROTR_ULONG" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="RR" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="SHA256_Encrpyt" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="SHA256_Init" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="SS" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="Sigma0" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="Sigma1" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="doGet" source ="LoginServlet.java" package ="kr.or.ddit.login" value ="1"/>
+         <Value name="getPostsDetail" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="insertChildPosts" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="insertParentPosts" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="maxPosts" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="postsCnt" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="postsPageList" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="updatePosts" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="updateUse" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="getPostsDetail" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="insertChildPosts" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="insertParentPosts" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="maxPosts" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="postsCnt" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="postsPageList" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="updatePosts" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="updateUse" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="getBoard_id" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getGroup_no" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getPosts_cnt" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getPosts_date" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getPosts_hno" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getPosts_no" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getPosts_title" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getPosts_use" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getRnum" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getUserid" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setBoard_id" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setGroup_no" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setPosts_cnt" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setPosts_date" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setPosts_hno" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setPosts_no" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setPosts_title" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setPosts_use" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setRnum" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setUserid" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="toString" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getPostsDetail" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="insertChildPosts" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="insertParentPosts" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="maxPosts" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="postsCnt" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="postsPageList" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="updatePosts" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="updateUse" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="getPostsDetail" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="insertChildPosts" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="insertParentPosts" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="maxPosts" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="postsCnt" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="postsPageList" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="updateUse" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="insertChildPosts" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="1"/>
+         <Value name="postsDetail" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="1"/>
+         <Value name="postsPageList" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="1"/>
+         <Value name="postsUpdateForm" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="1"/>
+         <Value name="updateAttachFile" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="1"/>
+         <Value name="updateUse" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="1"/>
+         <Value name="selectUser" source ="IUserDao.java" package ="kr.or.ddit.user.dao" value ="1"/>
+         <Value name="selectUser" source ="UserDao.java" package ="kr.or.ddit.user.dao" value ="1"/>
+         <Value name="authPass" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getAddr1" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getAddr2" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getAlias" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getBirth" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getEmail" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getName" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getPass" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getProfile" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getRnum" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getTel" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getUserId" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getZipcd" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setAddr1" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setAddr2" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setAlias" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setBirth" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setEmail" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setName" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setPass" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setProfile" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setRnum" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setTel" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setUserId" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setZipcd" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="selectUser" source ="IUserService.java" package ="kr.or.ddit.user.service" value ="1"/>
+         <Value name="selectUser" source ="UserService.java" package ="kr.or.ddit.user.service" value ="1"/>
+         <Value name="getPage" source ="PageVO.java" package ="kr.or.ddit.util.model" value ="1"/>
+         <Value name="getPageSize" source ="PageVO.java" package ="kr.or.ddit.util.model" value ="1"/>
+         <Value name="setPageSize" source ="PageVO.java" package ="kr.or.ddit.util.model" value ="1"/>
+         <Value name="setPage" source ="PageVO.java" package ="kr.or.ddit.util.model" value ="1"/>
+         <Value name="selectAllBoardTest" source ="BoardServiceTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="setup" source ="BoardServiceTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="selectCommTest" source ="CommDaoTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="setup" source ="CommDaoTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="getPostsDetailTest" source ="PostsDaoTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="postsCntTest" source ="PostsDaoTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="postsPageListTest" source ="PostsDaoTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="setup" source ="PostsDaoTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="maxPostsTest" source ="PostsServiceTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="setup" source ="PostsServiceTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="selectUserTest" source ="UserServiceTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="setup" source ="UserServiceTest.java" package ="kr.or.ddit.db" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "PAR" description ="Number of Parameters" max ="5" hint ="Move invoked method or pass an object">
+      <Values per = "method" avg = "1.26" stddev = "1.475" max = "11" maxinrange="false">
+         <Value name="EncRoundKeyUpdate0" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="11" inrange="false"/>
+         <Value name="EncRoundKeyUpdate1" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="11" inrange="false"/>
+         <Value name="FF" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="11" inrange="false"/>
+         <Value name="SeedRound" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="5"/>
+         <Value name="KISA_SHA256.Common#arraycopy_offset" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="5"/>
+         <Value name="KISA_SHA256.Common#byte_to_int" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="5"/>
+         <Value name="KISA_SHA256.Common#int_to_byte" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="5"/>
+         <Value name="KISA_SHA256.Common#arrayinit_offset" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="4"/>
+         <Value name="KISA_SHA256.Common#int_to_byte_unit" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="4"/>
+         <Value name="KISA_SHA256.Common#memcpy" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="4"/>
+         <Value name="KISA_SHA256.Common#memcpy" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="4"/>
+         <Value name="KISA_SHA256.Common#set_byte_for_int" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="4"/>
+         <Value name="SeedDecrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="3"/>
+         <Value name="SeedEncrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="3"/>
+         <Value name="KISA_SHA256.Common#arraycopy" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="3"/>
+         <Value name="KISA_SHA256.Common#arrayinit" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="3"/>
+         <Value name="KISA_SHA256.Common#byte_to_int" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="3"/>
+         <Value name="KISA_SHA256.Common#get_byte_for_int" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="3"/>
+         <Value name="KISA_SHA256.Common#get_bytes_for_ints" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="3"/>
+         <Value name="KISA_SHA256.Common#int_to_byte_unit_big_endian" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="3"/>
+         <Value name="BIG_D2B" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="3"/>
+         <Value name="Ch" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="3"/>
+         <Value name="Maj" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="3"/>
+         <Value name="SHA256_Encrpyt" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="3"/>
+         <Value name="SHA256_Process" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="3"/>
+         <Value name="boardInsert" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="2"/>
+         <Value name="boardUpdate" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="2"/>
+         <Value name="doGet" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="2"/>
+         <Value name="doPost" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="2"/>
+         <Value name="addComm" source ="CommServlet.java" package ="kr.or.ddit.comm.web" value ="2"/>
+         <Value name="doGet" source ="CommServlet.java" package ="kr.or.ddit.comm.web" value ="2"/>
+         <Value name="doPost" source ="CommServlet.java" package ="kr.or.ddit.comm.web" value ="2"/>
+         <Value name="updateComm" source ="CommServlet.java" package ="kr.or.ddit.comm.web" value ="2"/>
+         <Value name="addPadding" source ="AnsiX923Padding.java" package ="kr.or.ddit.encrypt.seed" value ="2"/>
+         <Value name="removePadding" source ="AnsiX923Padding.java" package ="kr.or.ddit.encrypt.seed" value ="2"/>
+         <Value name="SeedRoundKey" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="2"/>
+         <Value name="addZero" source ="StringUtil.java" package ="kr.or.ddit.encrypt.seed" value ="2"/>
+         <Value name="KISA_SHA256.Common#URShift" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="KISA_SHA256.Common#byte_to_int_big_endian" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="GetData" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="ROTL_ULONG" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="ROTR_ULONG" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="RR" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="SHA256_Close" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="SHA256_Transform" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="SS" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="doGet" source ="LoginServlet.java" package ="kr.or.ddit.login" value ="2"/>
+         <Value name="doPost" source ="LoginServlet.java" package ="kr.or.ddit.login" value ="2"/>
+         <Value name="addPostsForm" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="2"/>
+         <Value name="doGet" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="2"/>
+         <Value name="doPost" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="2"/>
+         <Value name="insertChildPosts" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="2"/>
+         <Value name="postsDetail" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="2"/>
+         <Value name="postsPageList" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="2"/>
+         <Value name="postsUpdateForm" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="2"/>
+         <Value name="postsUpdate" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="2"/>
+         <Value name="updateAttachFile" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="2"/>
+         <Value name="updateUse" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="2"/>
+         <Value name="getCookie" source ="StringUtil.java" package ="kr.or.ddit.util" value ="2"/>
+         <Value name="deleteAtta" source ="AttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="1"/>
+         <Value name="insertAtta" source ="AttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="1"/>
+         <Value name="selectAtta" source ="AttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="1"/>
+         <Value name="deleteAtta" source ="IAttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="1"/>
+         <Value name="insertAtta" source ="IAttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="1"/>
+         <Value name="selectAtta" source ="IAttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="1"/>
+         <Value name="setAtta_file" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="1"/>
+         <Value name="setAtta_no" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="1"/>
+         <Value name="setPosts_no" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="1"/>
+         <Value name="deleteAtta" source ="AttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="1"/>
+         <Value name="insertAtta" source ="AttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="1"/>
+         <Value name="selectAtta" source ="AttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="1"/>
+         <Value name="deleteAtta" source ="IAttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="1"/>
+         <Value name="insertAtta" source ="IAttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="1"/>
+         <Value name="selectAtta" source ="IAttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="1"/>
+         <Value name="insertBoard" source ="BoardDao.java" package ="kr.or.ddit.board.dao" value ="1"/>
+         <Value name="updateBoard" source ="BoardDao.java" package ="kr.or.ddit.board.dao" value ="1"/>
+         <Value name="insertBoard" source ="IBoardDao.java" package ="kr.or.ddit.board.dao" value ="1"/>
+         <Value name="updateBoard" source ="IBoardDao.java" package ="kr.or.ddit.board.dao" value ="1"/>
+         <Value name="setBoard_date" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="setBoard_id" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="setBoard_name" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="setBoard_yn" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="setUserId" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="insertBoard" source ="BoardService.java" package ="kr.or.ddit.board.service" value ="1"/>
+         <Value name="updateBoard" source ="BoardService.java" package ="kr.or.ddit.board.service" value ="1"/>
+         <Value name="insertBoard" source ="IBoardService.java" package ="kr.or.ddit.board.service" value ="1"/>
+         <Value name="updateBoard" source ="IBoardService.java" package ="kr.or.ddit.board.service" value ="1"/>
+         <Value name="goMain" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="1"/>
+         <Value name="insertComm" source ="CommDao.java" package ="kr.or.ddit.comm.dao" value ="1"/>
+         <Value name="selectComm" source ="CommDao.java" package ="kr.or.ddit.comm.dao" value ="1"/>
+         <Value name="updateComm" source ="CommDao.java" package ="kr.or.ddit.comm.dao" value ="1"/>
+         <Value name="insertComm" source ="ICommDao.java" package ="kr.or.ddit.comm.dao" value ="1"/>
+         <Value name="selectComm" source ="ICommDao.java" package ="kr.or.ddit.comm.dao" value ="1"/>
+         <Value name="updateComm" source ="ICommDao.java" package ="kr.or.ddit.comm.dao" value ="1"/>
+         <Value name="setComm_cnt" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="setComm_date" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="setComm_id" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="setComm_use" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="setPosts_no" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="setUserid" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="insertComm" source ="CommService.java" package ="kr.or.ddit.comm.service" value ="1"/>
+         <Value name="selectComm" source ="CommService.java" package ="kr.or.ddit.comm.service" value ="1"/>
+         <Value name="updateComm" source ="CommService.java" package ="kr.or.ddit.comm.service" value ="1"/>
+         <Value name="insertComm" source ="ICommService.java" package ="kr.or.ddit.comm.service" value ="1"/>
+         <Value name="selectComm" source ="ICommService.java" package ="kr.or.ddit.comm.service" value ="1"/>
+         <Value name="updateComm" source ="ICommService.java" package ="kr.or.ddit.comm.service" value ="1"/>
+         <Value name="Decrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="Decrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="Encrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="EndianChange" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="GetB0" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="GetB1" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="GetB2" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="GetB3" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="SeedEncrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="SeedEncrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="main" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="isEmpty" source ="StringUtil.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="KISA_SHA256.Common#intToUnsigned" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="ENDIAN_REVERSE_ULONG" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="RHO0" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="RHO1" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="SHA256_Init" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="Sigma0" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="Sigma1" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="encrypt" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="main" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="getPostsDetail" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="insertChildPosts" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="insertParentPosts" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="maxPosts" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="postsCnt" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="postsPageList" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="updatePosts" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="updateUse" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="getPostsDetail" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="insertChildPosts" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="insertParentPosts" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="maxPosts" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="postsCnt" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="postsPageList" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="updatePosts" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="updateUse" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="setBoard_id" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setGroup_no" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setPosts_cnt" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setPosts_date" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setPosts_hno" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setPosts_no" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setPosts_title" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setPosts_use" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setRnum" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setUserid" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getPostsDetail" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="insertChildPosts" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="insertParentPosts" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="maxPosts" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="postsCnt" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="postsPageList" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="updatePosts" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="updateUse" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="getPostsDetail" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="insertChildPosts" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="insertParentPosts" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="maxPosts" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="postsCnt" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="postsPageList" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="updatePosts" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="updateUse" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="selectUser" source ="IUserDao.java" package ="kr.or.ddit.user.dao" value ="1"/>
+         <Value name="selectUser" source ="UserDao.java" package ="kr.or.ddit.user.dao" value ="1"/>
+         <Value name="authPass" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setAddr1" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setAddr2" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setAlias" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setBirth" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setEmail" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setName" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setPass" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setProfile" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setRnum" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setTel" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setUserId" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setZipcd" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="selectUser" source ="IUserService.java" package ="kr.or.ddit.user.service" value ="1"/>
+         <Value name="selectUser" source ="UserService.java" package ="kr.or.ddit.user.service" value ="1"/>
+         <Value name="setPageSize" source ="PageVO.java" package ="kr.or.ddit.util.model" value ="1"/>
+         <Value name="setPage" source ="PageVO.java" package ="kr.or.ddit.util.model" value ="1"/>
+         <Value name="getFileName" source ="StringUtil.java" package ="kr.or.ddit.util" value ="1"/>
+         <Value name="getAtta_file" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="0"/>
+         <Value name="getAtta_no" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="0"/>
+         <Value name="getPosts_no" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="0"/>
+         <Value name="selectAllBoard" source ="BoardDao.java" package ="kr.or.ddit.board.dao" value ="0"/>
+         <Value name="selectAllBoard" source ="IBoardDao.java" package ="kr.or.ddit.board.dao" value ="0"/>
+         <Value name="getBoard_date" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="0"/>
+         <Value name="getBoard_id" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="0"/>
+         <Value name="getBoard_name" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="0"/>
+         <Value name="getBoard_yn" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="0"/>
+         <Value name="getUserId" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="0"/>
+         <Value name="selectAllBoard" source ="BoardService.java" package ="kr.or.ddit.board.service" value ="0"/>
+         <Value name="selectAllBoard" source ="IBoardService.java" package ="kr.or.ddit.board.service" value ="0"/>
+         <Value name="getComm_cnt" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="0"/>
+         <Value name="getComm_date" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="0"/>
+         <Value name="getComm_id" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="0"/>
+         <Value name="getComm_use" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="0"/>
+         <Value name="getPosts_no" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="0"/>
+         <Value name="getUserid" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="0"/>
+         <Value name="getSqlSessionFactory" source ="SqlFactoryBuilder.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="getName" source ="AnsiX923Padding.java" package ="kr.or.ddit.encrypt.seed" value ="0"/>
+         <Value name="getBoard_id" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="0"/>
+         <Value name="getGroup_no" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="0"/>
+         <Value name="getPosts_cnt" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="0"/>
+         <Value name="getPosts_date" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="0"/>
+         <Value name="getPosts_hno" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="0"/>
+         <Value name="getPosts_no" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="0"/>
+         <Value name="getPosts_title" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="0"/>
+         <Value name="getPosts_use" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="0"/>
+         <Value name="getRnum" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="0"/>
+         <Value name="getUserid" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="0"/>
+         <Value name="toString" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="0"/>
+         <Value name="getAddr1" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="0"/>
+         <Value name="getAddr2" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="0"/>
+         <Value name="getAlias" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="0"/>
+         <Value name="getBirth" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="0"/>
+         <Value name="getEmail" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="0"/>
+         <Value name="getName" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="0"/>
+         <Value name="getPass" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="0"/>
+         <Value name="getProfile" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="0"/>
+         <Value name="getRnum" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="0"/>
+         <Value name="getTel" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="0"/>
+         <Value name="getUserId" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="0"/>
+         <Value name="getZipcd" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="0"/>
+         <Value name="getPage" source ="PageVO.java" package ="kr.or.ddit.util.model" value ="0"/>
+         <Value name="getPageSize" source ="PageVO.java" package ="kr.or.ddit.util.model" value ="0"/>
+         <Value name="selectAllBoardTest" source ="BoardServiceTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="setup" source ="BoardServiceTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="selectCommTest" source ="CommDaoTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="setup" source ="CommDaoTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="getPostsDetailTest" source ="PostsDaoTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="postsCntTest" source ="PostsDaoTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="postsPageListTest" source ="PostsDaoTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="setup" source ="PostsDaoTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="maxPostsTest" source ="PostsServiceTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="setup" source ="PostsServiceTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="selectUserTest" source ="UserServiceTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="setup" source ="UserServiceTest.java" package ="kr.or.ddit.db" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NBD" description ="Nested Block Depth" max ="5" hint ="use Extract-method to split the method up">
+      <Values per = "method" avg = "1.077" stddev = "0.753" max = "5">
+         <Value name="Encrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="5"/>
+         <Value name="removePadding" source ="AnsiX923Padding.java" package ="kr.or.ddit.encrypt.seed" value ="4"/>
+         <Value name="Decrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="4"/>
+         <Value name="doPost" source ="LoginServlet.java" package ="kr.or.ddit.login" value ="4"/>
+         <Value name="addPostsForm" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="4"/>
+         <Value name="postsUpdate" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="4"/>
+         <Value name="addPadding" source ="AnsiX923Padding.java" package ="kr.or.ddit.encrypt.seed" value ="3"/>
+         <Value name="Decrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="3"/>
+         <Value name="getCookie" source ="StringUtil.java" package ="kr.or.ddit.util" value ="3"/>
+         <Value name="getFileName" source ="StringUtil.java" package ="kr.or.ddit.util" value ="3"/>
+         <Value name="boardInsert" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="2"/>
+         <Value name="boardUpdate" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="2"/>
+         <Value name="doPost" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="2"/>
+         <Value name="doGet" source ="CommServlet.java" package ="kr.or.ddit.comm.web" value ="2"/>
+         <Value name="doPost" source ="CommServlet.java" package ="kr.or.ddit.comm.web" value ="2"/>
+         <Value name="SeedDecrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="2"/>
+         <Value name="SeedEncrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="2"/>
+         <Value name="SeedRoundKey" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="2"/>
+         <Value name="isEmpty" source ="StringUtil.java" package ="kr.or.ddit.encrypt.seed" value ="2"/>
+         <Value name="KISA_SHA256.Common#arraycopy_offset" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="KISA_SHA256.Common#arraycopy" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="KISA_SHA256.Common#arrayinit_offset" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="KISA_SHA256.Common#arrayinit" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="KISA_SHA256.Common#byte_to_int" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="KISA_SHA256.Common#byte_to_int" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="KISA_SHA256.Common#get_byte_for_int" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="KISA_SHA256.Common#get_bytes_for_ints" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="KISA_SHA256.Common#int_to_byte_unit" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="KISA_SHA256.Common#memcpy" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="KISA_SHA256.Common#memcpy" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="KISA_SHA256.Common#set_byte_for_int" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="SHA256_Close" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="SHA256_Process" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="SHA256_Transform" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="main" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="2"/>
+         <Value name="updatePosts" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="2"/>
+         <Value name="doGet" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="2"/>
+         <Value name="doPost" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="2"/>
+         <Value name="deleteAtta" source ="AttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="1"/>
+         <Value name="insertAtta" source ="AttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="1"/>
+         <Value name="selectAtta" source ="AttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="1"/>
+         <Value name="getAtta_file" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="1"/>
+         <Value name="getAtta_no" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="1"/>
+         <Value name="getPosts_no" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="1"/>
+         <Value name="setAtta_file" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="1"/>
+         <Value name="setAtta_no" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="1"/>
+         <Value name="setPosts_no" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="1"/>
+         <Value name="deleteAtta" source ="AttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="1"/>
+         <Value name="insertAtta" source ="AttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="1"/>
+         <Value name="selectAtta" source ="AttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="1"/>
+         <Value name="insertBoard" source ="BoardDao.java" package ="kr.or.ddit.board.dao" value ="1"/>
+         <Value name="selectAllBoard" source ="BoardDao.java" package ="kr.or.ddit.board.dao" value ="1"/>
+         <Value name="updateBoard" source ="BoardDao.java" package ="kr.or.ddit.board.dao" value ="1"/>
+         <Value name="getBoard_date" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="getBoard_id" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="getBoard_name" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="getBoard_yn" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="getUserId" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="setBoard_date" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="setBoard_id" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="setBoard_name" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="setBoard_yn" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="setUserId" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="insertBoard" source ="BoardService.java" package ="kr.or.ddit.board.service" value ="1"/>
+         <Value name="selectAllBoard" source ="BoardService.java" package ="kr.or.ddit.board.service" value ="1"/>
+         <Value name="updateBoard" source ="BoardService.java" package ="kr.or.ddit.board.service" value ="1"/>
+         <Value name="doGet" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="1"/>
+         <Value name="goMain" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="1"/>
+         <Value name="insertComm" source ="CommDao.java" package ="kr.or.ddit.comm.dao" value ="1"/>
+         <Value name="selectComm" source ="CommDao.java" package ="kr.or.ddit.comm.dao" value ="1"/>
+         <Value name="updateComm" source ="CommDao.java" package ="kr.or.ddit.comm.dao" value ="1"/>
+         <Value name="getComm_cnt" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="getComm_date" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="getComm_id" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="getComm_use" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="getPosts_no" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="getUserid" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="setComm_cnt" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="setComm_date" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="setComm_id" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="setComm_use" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="setPosts_no" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="setUserid" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="insertComm" source ="CommService.java" package ="kr.or.ddit.comm.service" value ="1"/>
+         <Value name="selectComm" source ="CommService.java" package ="kr.or.ddit.comm.service" value ="1"/>
+         <Value name="updateComm" source ="CommService.java" package ="kr.or.ddit.comm.service" value ="1"/>
+         <Value name="addComm" source ="CommServlet.java" package ="kr.or.ddit.comm.web" value ="1"/>
+         <Value name="updateComm" source ="CommServlet.java" package ="kr.or.ddit.comm.web" value ="1"/>
+         <Value name="getSqlSessionFactory" source ="SqlFactoryBuilder.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="getName" source ="AnsiX923Padding.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="EncRoundKeyUpdate0" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="EncRoundKeyUpdate1" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="EndianChange" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="GetB0" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="GetB1" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="GetB2" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="GetB3" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="SeedEncrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="SeedEncrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="SeedRound" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="main" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="addZero" source ="StringUtil.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="KISA_SHA256.Common#URShift" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="KISA_SHA256.Common#byte_to_int_big_endian" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="KISA_SHA256.Common#intToUnsigned" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="KISA_SHA256.Common#int_to_byte_unit_big_endian" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="KISA_SHA256.Common#int_to_byte" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="BIG_D2B" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="Ch" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="ENDIAN_REVERSE_ULONG" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="FF" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="GetData" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="Maj" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="RHO0" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="RHO1" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="ROTL_ULONG" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="ROTR_ULONG" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="RR" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="SHA256_Encrpyt" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="SHA256_Init" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="SS" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="Sigma0" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="Sigma1" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="encrypt" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="doGet" source ="LoginServlet.java" package ="kr.or.ddit.login" value ="1"/>
+         <Value name="getPostsDetail" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="insertChildPosts" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="insertParentPosts" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="maxPosts" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="postsCnt" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="postsPageList" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="updatePosts" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="updateUse" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="getBoard_id" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getGroup_no" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getPosts_cnt" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getPosts_date" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getPosts_hno" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getPosts_no" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getPosts_title" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getPosts_use" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getRnum" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getUserid" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setBoard_id" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setGroup_no" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setPosts_cnt" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setPosts_date" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setPosts_hno" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setPosts_no" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setPosts_title" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setPosts_use" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setRnum" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setUserid" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="toString" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getPostsDetail" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="insertChildPosts" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="insertParentPosts" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="maxPosts" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="postsCnt" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="postsPageList" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="updateUse" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="insertChildPosts" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="1"/>
+         <Value name="postsDetail" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="1"/>
+         <Value name="postsPageList" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="1"/>
+         <Value name="postsUpdateForm" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="1"/>
+         <Value name="updateAttachFile" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="1"/>
+         <Value name="updateUse" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="1"/>
+         <Value name="selectUser" source ="UserDao.java" package ="kr.or.ddit.user.dao" value ="1"/>
+         <Value name="authPass" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getAddr1" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getAddr2" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getAlias" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getBirth" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getEmail" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getName" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getPass" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getProfile" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getRnum" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getTel" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getUserId" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getZipcd" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setAddr1" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setAddr2" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setAlias" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setBirth" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setEmail" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setName" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setPass" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setProfile" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setRnum" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setTel" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setUserId" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setZipcd" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="selectUser" source ="UserService.java" package ="kr.or.ddit.user.service" value ="1"/>
+         <Value name="getPage" source ="PageVO.java" package ="kr.or.ddit.util.model" value ="1"/>
+         <Value name="getPageSize" source ="PageVO.java" package ="kr.or.ddit.util.model" value ="1"/>
+         <Value name="setPageSize" source ="PageVO.java" package ="kr.or.ddit.util.model" value ="1"/>
+         <Value name="setPage" source ="PageVO.java" package ="kr.or.ddit.util.model" value ="1"/>
+         <Value name="selectAllBoardTest" source ="BoardServiceTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="setup" source ="BoardServiceTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="selectCommTest" source ="CommDaoTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="setup" source ="CommDaoTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="getPostsDetailTest" source ="PostsDaoTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="postsCntTest" source ="PostsDaoTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="postsPageListTest" source ="PostsDaoTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="setup" source ="PostsDaoTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="maxPostsTest" source ="PostsServiceTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="setup" source ="PostsServiceTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="selectUserTest" source ="UserServiceTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="setup" source ="UserServiceTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="deleteAtta" source ="IAttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="0"/>
+         <Value name="insertAtta" source ="IAttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="0"/>
+         <Value name="selectAtta" source ="IAttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="0"/>
+         <Value name="deleteAtta" source ="IAttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="0"/>
+         <Value name="insertAtta" source ="IAttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="0"/>
+         <Value name="selectAtta" source ="IAttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="0"/>
+         <Value name="insertBoard" source ="IBoardDao.java" package ="kr.or.ddit.board.dao" value ="0"/>
+         <Value name="selectAllBoard" source ="IBoardDao.java" package ="kr.or.ddit.board.dao" value ="0"/>
+         <Value name="updateBoard" source ="IBoardDao.java" package ="kr.or.ddit.board.dao" value ="0"/>
+         <Value name="insertBoard" source ="IBoardService.java" package ="kr.or.ddit.board.service" value ="0"/>
+         <Value name="selectAllBoard" source ="IBoardService.java" package ="kr.or.ddit.board.service" value ="0"/>
+         <Value name="updateBoard" source ="IBoardService.java" package ="kr.or.ddit.board.service" value ="0"/>
+         <Value name="insertComm" source ="ICommDao.java" package ="kr.or.ddit.comm.dao" value ="0"/>
+         <Value name="selectComm" source ="ICommDao.java" package ="kr.or.ddit.comm.dao" value ="0"/>
+         <Value name="updateComm" source ="ICommDao.java" package ="kr.or.ddit.comm.dao" value ="0"/>
+         <Value name="insertComm" source ="ICommService.java" package ="kr.or.ddit.comm.service" value ="0"/>
+         <Value name="selectComm" source ="ICommService.java" package ="kr.or.ddit.comm.service" value ="0"/>
+         <Value name="updateComm" source ="ICommService.java" package ="kr.or.ddit.comm.service" value ="0"/>
+         <Value name="getPostsDetail" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="insertChildPosts" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="insertParentPosts" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="maxPosts" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="postsCnt" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="postsPageList" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="updatePosts" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="updateUse" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="getPostsDetail" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="insertChildPosts" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="insertParentPosts" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="maxPosts" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="postsCnt" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="postsPageList" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="updatePosts" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="updateUse" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="selectUser" source ="IUserDao.java" package ="kr.or.ddit.user.dao" value ="0"/>
+         <Value name="selectUser" source ="IUserService.java" package ="kr.or.ddit.user.service" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "CA" description ="Afferent Coupling">
+      <Values per = "packageFragment" avg = "2.6" stddev = "2.757" max = "10">
+         <Value name="kr.or.ddit.board.model" package ="kr.or.ddit.board.model" value ="10"/>
+         <Value name="kr.or.ddit.user.model" package ="kr.or.ddit.user.model" value ="8"/>
+         <Value name="kr.or.ddit.comm.model" package ="kr.or.ddit.comm.model" value ="7"/>
+         <Value name="kr.or.ddit.attachments.model" package ="kr.or.ddit.attachments.model" value ="6"/>
+         <Value name="kr.or.ddit.posts.model" package ="kr.or.ddit.posts.model" value ="6"/>
+         <Value name="kr.or.ddit.db" package ="kr.or.ddit.db" value ="5"/>
+         <Value name="kr.or.ddit.board.service" package ="kr.or.ddit.board.service" value ="3"/>
+         <Value name="kr.or.ddit.comm.service" package ="kr.or.ddit.comm.service" value ="3"/>
+         <Value name="kr.or.ddit.util.model" package ="kr.or.ddit.util.model" value ="3"/>
+         <Value name="kr.or.ddit.attachments.dao" package ="kr.or.ddit.attachments.dao" value ="2"/>
+         <Value name="kr.or.ddit.posts.dao" package ="kr.or.ddit.posts.dao" value ="2"/>
+         <Value name="kr.or.ddit.posts.service" package ="kr.or.ddit.posts.service" value ="2"/>
+         <Value name="kr.or.ddit.user.service" package ="kr.or.ddit.user.service" value ="2"/>
+         <Value name="kr.or.ddit.attachments.service" package ="kr.or.ddit.attachments.service" value ="1"/>
+         <Value name="kr.or.ddit.board.dao" package ="kr.or.ddit.board.dao" value ="1"/>
+         <Value name="kr.or.ddit.comm.dao" package ="kr.or.ddit.comm.dao" value ="1"/>
+         <Value name="kr.or.ddit.encrypt.sha" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="kr.or.ddit.user.dao" package ="kr.or.ddit.user.dao" value ="1"/>
+         <Value name="kr.or.ddit.util" package ="kr.or.ddit.util" value ="1"/>
+         <Value name="kr.or.ddit.board.web" package ="kr.or.ddit.board.web" value ="0"/>
+         <Value name="kr.or.ddit.comm.web" package ="kr.or.ddit.comm.web" value ="0"/>
+         <Value name="kr.or.ddit.encrypt.seed" package ="kr.or.ddit.encrypt.seed" value ="0"/>
+         <Value name="kr.or.ddit.login" package ="kr.or.ddit.login" value ="0"/>
+         <Value name="kr.or.ddit.posts.web" package ="kr.or.ddit.posts.web" value ="0"/>
+         <Value name="kr.or.ddit.db" package ="kr.or.ddit.db" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "CE" description ="Efferent Coupling">
+      <Values per = "packageFragment" avg = "1.2" stddev = "1.166" max = "5">
+         <Value name="kr.or.ddit.db" package ="kr.or.ddit.db" value ="5"/>
+         <Value name="kr.or.ddit.attachments.dao" package ="kr.or.ddit.attachments.dao" value ="2"/>
+         <Value name="kr.or.ddit.attachments.service" package ="kr.or.ddit.attachments.service" value ="2"/>
+         <Value name="kr.or.ddit.board.dao" package ="kr.or.ddit.board.dao" value ="2"/>
+         <Value name="kr.or.ddit.board.service" package ="kr.or.ddit.board.service" value ="2"/>
+         <Value name="kr.or.ddit.comm.dao" package ="kr.or.ddit.comm.dao" value ="2"/>
+         <Value name="kr.or.ddit.comm.service" package ="kr.or.ddit.comm.service" value ="2"/>
+         <Value name="kr.or.ddit.posts.dao" package ="kr.or.ddit.posts.dao" value ="2"/>
+         <Value name="kr.or.ddit.posts.service" package ="kr.or.ddit.posts.service" value ="2"/>
+         <Value name="kr.or.ddit.user.dao" package ="kr.or.ddit.user.dao" value ="2"/>
+         <Value name="kr.or.ddit.user.service" package ="kr.or.ddit.user.service" value ="2"/>
+         <Value name="kr.or.ddit.board.web" package ="kr.or.ddit.board.web" value ="1"/>
+         <Value name="kr.or.ddit.comm.web" package ="kr.or.ddit.comm.web" value ="1"/>
+         <Value name="kr.or.ddit.db" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="kr.or.ddit.login" package ="kr.or.ddit.login" value ="1"/>
+         <Value name="kr.or.ddit.posts.web" package ="kr.or.ddit.posts.web" value ="1"/>
+         <Value name="kr.or.ddit.attachments.model" package ="kr.or.ddit.attachments.model" value ="0"/>
+         <Value name="kr.or.ddit.board.model" package ="kr.or.ddit.board.model" value ="0"/>
+         <Value name="kr.or.ddit.comm.model" package ="kr.or.ddit.comm.model" value ="0"/>
+         <Value name="kr.or.ddit.encrypt.seed" package ="kr.or.ddit.encrypt.seed" value ="0"/>
+         <Value name="kr.or.ddit.encrypt.sha" package ="kr.or.ddit.encrypt.sha" value ="0"/>
+         <Value name="kr.or.ddit.posts.model" package ="kr.or.ddit.posts.model" value ="0"/>
+         <Value name="kr.or.ddit.user.model" package ="kr.or.ddit.user.model" value ="0"/>
+         <Value name="kr.or.ddit.util" package ="kr.or.ddit.util" value ="0"/>
+         <Value name="kr.or.ddit.util.model" package ="kr.or.ddit.util.model" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "RMI" description ="Instability">
+      <Values per = "packageFragment" avg = "0.465" stddev = "0.385" max = "1">
+         <Value name="kr.or.ddit.board.web" package ="kr.or.ddit.board.web" value ="1"/>
+         <Value name="kr.or.ddit.comm.web" package ="kr.or.ddit.comm.web" value ="1"/>
+         <Value name="kr.or.ddit.encrypt.seed" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="kr.or.ddit.login" package ="kr.or.ddit.login" value ="1"/>
+         <Value name="kr.or.ddit.posts.web" package ="kr.or.ddit.posts.web" value ="1"/>
+         <Value name="kr.or.ddit.db" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="kr.or.ddit.attachments.service" package ="kr.or.ddit.attachments.service" value ="0.667"/>
+         <Value name="kr.or.ddit.board.dao" package ="kr.or.ddit.board.dao" value ="0.667"/>
+         <Value name="kr.or.ddit.comm.dao" package ="kr.or.ddit.comm.dao" value ="0.667"/>
+         <Value name="kr.or.ddit.user.dao" package ="kr.or.ddit.user.dao" value ="0.667"/>
+         <Value name="kr.or.ddit.attachments.dao" package ="kr.or.ddit.attachments.dao" value ="0.5"/>
+         <Value name="kr.or.ddit.posts.dao" package ="kr.or.ddit.posts.dao" value ="0.5"/>
+         <Value name="kr.or.ddit.posts.service" package ="kr.or.ddit.posts.service" value ="0.5"/>
+         <Value name="kr.or.ddit.user.service" package ="kr.or.ddit.user.service" value ="0.5"/>
+         <Value name="kr.or.ddit.board.service" package ="kr.or.ddit.board.service" value ="0.4"/>
+         <Value name="kr.or.ddit.comm.service" package ="kr.or.ddit.comm.service" value ="0.4"/>
+         <Value name="kr.or.ddit.db" package ="kr.or.ddit.db" value ="0.167"/>
+         <Value name="kr.or.ddit.attachments.model" package ="kr.or.ddit.attachments.model" value ="0"/>
+         <Value name="kr.or.ddit.board.model" package ="kr.or.ddit.board.model" value ="0"/>
+         <Value name="kr.or.ddit.comm.model" package ="kr.or.ddit.comm.model" value ="0"/>
+         <Value name="kr.or.ddit.encrypt.sha" package ="kr.or.ddit.encrypt.sha" value ="0"/>
+         <Value name="kr.or.ddit.posts.model" package ="kr.or.ddit.posts.model" value ="0"/>
+         <Value name="kr.or.ddit.user.model" package ="kr.or.ddit.user.model" value ="0"/>
+         <Value name="kr.or.ddit.util" package ="kr.or.ddit.util" value ="0"/>
+         <Value name="kr.or.ddit.util.model" package ="kr.or.ddit.util.model" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "RMA" description ="Abstractness">
+      <Values per = "packageFragment" avg = "0.2" stddev = "0.245" max = "0.5">
+         <Value name="kr.or.ddit.attachments.dao" package ="kr.or.ddit.attachments.dao" value ="0.5"/>
+         <Value name="kr.or.ddit.attachments.service" package ="kr.or.ddit.attachments.service" value ="0.5"/>
+         <Value name="kr.or.ddit.board.dao" package ="kr.or.ddit.board.dao" value ="0.5"/>
+         <Value name="kr.or.ddit.board.service" package ="kr.or.ddit.board.service" value ="0.5"/>
+         <Value name="kr.or.ddit.comm.dao" package ="kr.or.ddit.comm.dao" value ="0.5"/>
+         <Value name="kr.or.ddit.comm.service" package ="kr.or.ddit.comm.service" value ="0.5"/>
+         <Value name="kr.or.ddit.posts.dao" package ="kr.or.ddit.posts.dao" value ="0.5"/>
+         <Value name="kr.or.ddit.posts.service" package ="kr.or.ddit.posts.service" value ="0.5"/>
+         <Value name="kr.or.ddit.user.dao" package ="kr.or.ddit.user.dao" value ="0.5"/>
+         <Value name="kr.or.ddit.user.service" package ="kr.or.ddit.user.service" value ="0.5"/>
+         <Value name="kr.or.ddit.attachments.model" package ="kr.or.ddit.attachments.model" value ="0"/>
+         <Value name="kr.or.ddit.board.model" package ="kr.or.ddit.board.model" value ="0"/>
+         <Value name="kr.or.ddit.board.web" package ="kr.or.ddit.board.web" value ="0"/>
+         <Value name="kr.or.ddit.comm.model" package ="kr.or.ddit.comm.model" value ="0"/>
+         <Value name="kr.or.ddit.comm.web" package ="kr.or.ddit.comm.web" value ="0"/>
+         <Value name="kr.or.ddit.db" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="kr.or.ddit.encrypt.seed" package ="kr.or.ddit.encrypt.seed" value ="0"/>
+         <Value name="kr.or.ddit.encrypt.sha" package ="kr.or.ddit.encrypt.sha" value ="0"/>
+         <Value name="kr.or.ddit.login" package ="kr.or.ddit.login" value ="0"/>
+         <Value name="kr.or.ddit.posts.model" package ="kr.or.ddit.posts.model" value ="0"/>
+         <Value name="kr.or.ddit.posts.web" package ="kr.or.ddit.posts.web" value ="0"/>
+         <Value name="kr.or.ddit.user.model" package ="kr.or.ddit.user.model" value ="0"/>
+         <Value name="kr.or.ddit.util" package ="kr.or.ddit.util" value ="0"/>
+         <Value name="kr.or.ddit.util.model" package ="kr.or.ddit.util.model" value ="0"/>
+         <Value name="kr.or.ddit.db" package ="kr.or.ddit.db" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "RMD" description ="Normalized Distance">
+      <Values per = "packageFragment" avg = "0.388" stddev = "0.45" max = "1">
+         <Value name="kr.or.ddit.attachments.model" package ="kr.or.ddit.attachments.model" value ="1"/>
+         <Value name="kr.or.ddit.board.model" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="kr.or.ddit.comm.model" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="kr.or.ddit.encrypt.sha" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="kr.or.ddit.posts.model" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="kr.or.ddit.user.model" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="kr.or.ddit.util" package ="kr.or.ddit.util" value ="1"/>
+         <Value name="kr.or.ddit.util.model" package ="kr.or.ddit.util.model" value ="1"/>
+         <Value name="kr.or.ddit.db" package ="kr.or.ddit.db" value ="0.833"/>
+         <Value name="kr.or.ddit.attachments.service" package ="kr.or.ddit.attachments.service" value ="0.167"/>
+         <Value name="kr.or.ddit.board.dao" package ="kr.or.ddit.board.dao" value ="0.167"/>
+         <Value name="kr.or.ddit.comm.dao" package ="kr.or.ddit.comm.dao" value ="0.167"/>
+         <Value name="kr.or.ddit.user.dao" package ="kr.or.ddit.user.dao" value ="0.167"/>
+         <Value name="kr.or.ddit.board.service" package ="kr.or.ddit.board.service" value ="0.1"/>
+         <Value name="kr.or.ddit.comm.service" package ="kr.or.ddit.comm.service" value ="0.1"/>
+         <Value name="kr.or.ddit.attachments.dao" package ="kr.or.ddit.attachments.dao" value ="0"/>
+         <Value name="kr.or.ddit.board.web" package ="kr.or.ddit.board.web" value ="0"/>
+         <Value name="kr.or.ddit.comm.web" package ="kr.or.ddit.comm.web" value ="0"/>
+         <Value name="kr.or.ddit.encrypt.seed" package ="kr.or.ddit.encrypt.seed" value ="0"/>
+         <Value name="kr.or.ddit.login" package ="kr.or.ddit.login" value ="0"/>
+         <Value name="kr.or.ddit.posts.dao" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="kr.or.ddit.posts.service" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="kr.or.ddit.posts.web" package ="kr.or.ddit.posts.web" value ="0"/>
+         <Value name="kr.or.ddit.user.service" package ="kr.or.ddit.user.service" value ="0"/>
+         <Value name="kr.or.ddit.db" package ="kr.or.ddit.db" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "DIT" description ="Depth of Inheritance Tree">
+      <Values per = "type" avg = "0.953" stddev = "0.776" max = "3">
+         <Value name="BoardServlet" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="3"/>
+         <Value name="CommServlet" source ="CommServlet.java" package ="kr.or.ddit.comm.web" value ="3"/>
+         <Value name="LoginServlet" source ="LoginServlet.java" package ="kr.or.ddit.login" value ="3"/>
+         <Value name="PostsServlet" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="3"/>
+         <Value name="AttachmentsDao" source ="AttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="1"/>
+         <Value name="AttachmentsVO" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="1"/>
+         <Value name="AttachmentsService" source ="AttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="1"/>
+         <Value name="BoardDao" source ="BoardDao.java" package ="kr.or.ddit.board.dao" value ="1"/>
+         <Value name="BoardVO" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="BoardService" source ="BoardService.java" package ="kr.or.ddit.board.service" value ="1"/>
+         <Value name="CommDao" source ="CommDao.java" package ="kr.or.ddit.comm.dao" value ="1"/>
+         <Value name="CommVO" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="CommService" source ="CommService.java" package ="kr.or.ddit.comm.service" value ="1"/>
+         <Value name="SqlFactoryBuilder" source ="SqlFactoryBuilder.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="AnsiX923Padding" source ="AnsiX923Padding.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="KISA_SEED_CBC" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="StringUtil" source ="StringUtil.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="KISA_SHA256" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="KISA_SHA256.Common" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="KISA_SHA256.SHA256_INFO" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="PostsDao" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="PostsVO" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="PostsService" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="UserDao" source ="UserDao.java" package ="kr.or.ddit.user.dao" value ="1"/>
+         <Value name="UserVO" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="UserService" source ="UserService.java" package ="kr.or.ddit.user.service" value ="1"/>
+         <Value name="PageVO" source ="PageVO.java" package ="kr.or.ddit.util.model" value ="1"/>
+         <Value name="StringUtil" source ="StringUtil.java" package ="kr.or.ddit.util" value ="1"/>
+         <Value name="BoardServiceTest" source ="BoardServiceTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="CommDaoTest" source ="CommDaoTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="PostsDaoTest" source ="PostsDaoTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="PostsServiceTest" source ="PostsServiceTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="UserServiceTest" source ="UserServiceTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="IAttachmentsDao" source ="IAttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="0"/>
+         <Value name="IAttachmentsService" source ="IAttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="0"/>
+         <Value name="IBoardDao" source ="IBoardDao.java" package ="kr.or.ddit.board.dao" value ="0"/>
+         <Value name="IBoardService" source ="IBoardService.java" package ="kr.or.ddit.board.service" value ="0"/>
+         <Value name="ICommDao" source ="ICommDao.java" package ="kr.or.ddit.comm.dao" value ="0"/>
+         <Value name="ICommService" source ="ICommService.java" package ="kr.or.ddit.comm.service" value ="0"/>
+         <Value name="IPostsDao" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="IPostsService" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="IUserDao" source ="IUserDao.java" package ="kr.or.ddit.user.dao" value ="0"/>
+         <Value name="IUserService" source ="IUserService.java" package ="kr.or.ddit.user.service" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "WMC" description ="Weighted methods per Class">
+      <Values per = "type" total = "341" avg = "7.93" stddev = "9.667" max = "41">
+         <Value name="KISA_SEED_CBC" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="41"/>
+         <Value name="KISA_SHA256" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="35"/>
+         <Value name="KISA_SHA256.Common" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="33"/>
+         <Value name="PostsServlet" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="25"/>
+         <Value name="UserVO" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="25"/>
+         <Value name="PostsVO" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="21"/>
+         <Value name="CommVO" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="12"/>
+         <Value name="BoardVO" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="10"/>
+         <Value name="BoardServlet" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="9"/>
+         <Value name="AnsiX923Padding" source ="AnsiX923Padding.java" package ="kr.or.ddit.encrypt.seed" value ="9"/>
+         <Value name="PostsService" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="9"/>
+         <Value name="LoginServlet" source ="LoginServlet.java" package ="kr.or.ddit.login" value ="8"/>
+         <Value name="IPostsDao" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="8"/>
+         <Value name="PostsDao" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="8"/>
+         <Value name="IPostsService" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="8"/>
+         <Value name="AttachmentsVO" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="6"/>
+         <Value name="CommServlet" source ="CommServlet.java" package ="kr.or.ddit.comm.web" value ="6"/>
+         <Value name="StringUtil" source ="StringUtil.java" package ="kr.or.ddit.util" value ="6"/>
+         <Value name="StringUtil" source ="StringUtil.java" package ="kr.or.ddit.encrypt.seed" value ="5"/>
+         <Value name="PageVO" source ="PageVO.java" package ="kr.or.ddit.util.model" value ="4"/>
+         <Value name="PostsDaoTest" source ="PostsDaoTest.java" package ="kr.or.ddit.db" value ="4"/>
+         <Value name="AttachmentsDao" source ="AttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="3"/>
+         <Value name="IAttachmentsDao" source ="IAttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="3"/>
+         <Value name="AttachmentsService" source ="AttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="3"/>
+         <Value name="IAttachmentsService" source ="IAttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="3"/>
+         <Value name="BoardDao" source ="BoardDao.java" package ="kr.or.ddit.board.dao" value ="3"/>
+         <Value name="IBoardDao" source ="IBoardDao.java" package ="kr.or.ddit.board.dao" value ="3"/>
+         <Value name="BoardService" source ="BoardService.java" package ="kr.or.ddit.board.service" value ="3"/>
+         <Value name="IBoardService" source ="IBoardService.java" package ="kr.or.ddit.board.service" value ="3"/>
+         <Value name="CommDao" source ="CommDao.java" package ="kr.or.ddit.comm.dao" value ="3"/>
+         <Value name="ICommDao" source ="ICommDao.java" package ="kr.or.ddit.comm.dao" value ="3"/>
+         <Value name="CommService" source ="CommService.java" package ="kr.or.ddit.comm.service" value ="3"/>
+         <Value name="ICommService" source ="ICommService.java" package ="kr.or.ddit.comm.service" value ="3"/>
+         <Value name="BoardServiceTest" source ="BoardServiceTest.java" package ="kr.or.ddit.db" value ="2"/>
+         <Value name="CommDaoTest" source ="CommDaoTest.java" package ="kr.or.ddit.db" value ="2"/>
+         <Value name="PostsServiceTest" source ="PostsServiceTest.java" package ="kr.or.ddit.db" value ="2"/>
+         <Value name="UserServiceTest" source ="UserServiceTest.java" package ="kr.or.ddit.db" value ="2"/>
+         <Value name="SqlFactoryBuilder" source ="SqlFactoryBuilder.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="IUserDao" source ="IUserDao.java" package ="kr.or.ddit.user.dao" value ="1"/>
+         <Value name="UserDao" source ="UserDao.java" package ="kr.or.ddit.user.dao" value ="1"/>
+         <Value name="IUserService" source ="IUserService.java" package ="kr.or.ddit.user.service" value ="1"/>
+         <Value name="UserService" source ="UserService.java" package ="kr.or.ddit.user.service" value ="1"/>
+         <Value name="KISA_SHA256.SHA256_INFO" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NSC" description ="Number of Children">
+      <Values per = "type" total = "10" avg = "0.233" stddev = "0.422" max = "1">
+         <Value name="IAttachmentsDao" source ="IAttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="1"/>
+         <Value name="IAttachmentsService" source ="IAttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="1"/>
+         <Value name="IBoardDao" source ="IBoardDao.java" package ="kr.or.ddit.board.dao" value ="1"/>
+         <Value name="IBoardService" source ="IBoardService.java" package ="kr.or.ddit.board.service" value ="1"/>
+         <Value name="ICommDao" source ="ICommDao.java" package ="kr.or.ddit.comm.dao" value ="1"/>
+         <Value name="ICommService" source ="ICommService.java" package ="kr.or.ddit.comm.service" value ="1"/>
+         <Value name="IPostsDao" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="IPostsService" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="IUserDao" source ="IUserDao.java" package ="kr.or.ddit.user.dao" value ="1"/>
+         <Value name="IUserService" source ="IUserService.java" package ="kr.or.ddit.user.service" value ="1"/>
+         <Value name="AttachmentsDao" source ="AttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="0"/>
+         <Value name="AttachmentsVO" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="0"/>
+         <Value name="AttachmentsService" source ="AttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="0"/>
+         <Value name="BoardDao" source ="BoardDao.java" package ="kr.or.ddit.board.dao" value ="0"/>
+         <Value name="BoardVO" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="0"/>
+         <Value name="BoardService" source ="BoardService.java" package ="kr.or.ddit.board.service" value ="0"/>
+         <Value name="BoardServlet" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="0"/>
+         <Value name="CommDao" source ="CommDao.java" package ="kr.or.ddit.comm.dao" value ="0"/>
+         <Value name="CommVO" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="0"/>
+         <Value name="CommService" source ="CommService.java" package ="kr.or.ddit.comm.service" value ="0"/>
+         <Value name="CommServlet" source ="CommServlet.java" package ="kr.or.ddit.comm.web" value ="0"/>
+         <Value name="SqlFactoryBuilder" source ="SqlFactoryBuilder.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="AnsiX923Padding" source ="AnsiX923Padding.java" package ="kr.or.ddit.encrypt.seed" value ="0"/>
+         <Value name="KISA_SEED_CBC" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="0"/>
+         <Value name="StringUtil" source ="StringUtil.java" package ="kr.or.ddit.encrypt.seed" value ="0"/>
+         <Value name="KISA_SHA256" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="0"/>
+         <Value name="KISA_SHA256.Common" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="0"/>
+         <Value name="KISA_SHA256.SHA256_INFO" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="0"/>
+         <Value name="LoginServlet" source ="LoginServlet.java" package ="kr.or.ddit.login" value ="0"/>
+         <Value name="PostsDao" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="PostsVO" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="0"/>
+         <Value name="PostsService" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="PostsServlet" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="0"/>
+         <Value name="UserDao" source ="UserDao.java" package ="kr.or.ddit.user.dao" value ="0"/>
+         <Value name="UserVO" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="0"/>
+         <Value name="UserService" source ="UserService.java" package ="kr.or.ddit.user.service" value ="0"/>
+         <Value name="PageVO" source ="PageVO.java" package ="kr.or.ddit.util.model" value ="0"/>
+         <Value name="StringUtil" source ="StringUtil.java" package ="kr.or.ddit.util" value ="0"/>
+         <Value name="BoardServiceTest" source ="BoardServiceTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="CommDaoTest" source ="CommDaoTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="PostsDaoTest" source ="PostsDaoTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="PostsServiceTest" source ="PostsServiceTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="UserServiceTest" source ="UserServiceTest.java" package ="kr.or.ddit.db" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NORM" description ="Number of Overridden Methods">
+      <Values per = "type" total = "9" avg = "0.209" stddev = "0.593" max = "2">
+         <Value name="BoardServlet" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="2"/>
+         <Value name="CommServlet" source ="CommServlet.java" package ="kr.or.ddit.comm.web" value ="2"/>
+         <Value name="LoginServlet" source ="LoginServlet.java" package ="kr.or.ddit.login" value ="2"/>
+         <Value name="PostsServlet" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="2"/>
+         <Value name="PostsVO" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="AttachmentsDao" source ="AttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="0"/>
+         <Value name="IAttachmentsDao" source ="IAttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="0"/>
+         <Value name="AttachmentsVO" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="0"/>
+         <Value name="AttachmentsService" source ="AttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="0"/>
+         <Value name="IAttachmentsService" source ="IAttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="0"/>
+         <Value name="BoardDao" source ="BoardDao.java" package ="kr.or.ddit.board.dao" value ="0"/>
+         <Value name="IBoardDao" source ="IBoardDao.java" package ="kr.or.ddit.board.dao" value ="0"/>
+         <Value name="BoardVO" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="0"/>
+         <Value name="BoardService" source ="BoardService.java" package ="kr.or.ddit.board.service" value ="0"/>
+         <Value name="IBoardService" source ="IBoardService.java" package ="kr.or.ddit.board.service" value ="0"/>
+         <Value name="CommDao" source ="CommDao.java" package ="kr.or.ddit.comm.dao" value ="0"/>
+         <Value name="ICommDao" source ="ICommDao.java" package ="kr.or.ddit.comm.dao" value ="0"/>
+         <Value name="CommVO" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="0"/>
+         <Value name="CommService" source ="CommService.java" package ="kr.or.ddit.comm.service" value ="0"/>
+         <Value name="ICommService" source ="ICommService.java" package ="kr.or.ddit.comm.service" value ="0"/>
+         <Value name="SqlFactoryBuilder" source ="SqlFactoryBuilder.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="AnsiX923Padding" source ="AnsiX923Padding.java" package ="kr.or.ddit.encrypt.seed" value ="0"/>
+         <Value name="KISA_SEED_CBC" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="0"/>
+         <Value name="StringUtil" source ="StringUtil.java" package ="kr.or.ddit.encrypt.seed" value ="0"/>
+         <Value name="KISA_SHA256" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="0"/>
+         <Value name="KISA_SHA256.Common" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="0"/>
+         <Value name="KISA_SHA256.SHA256_INFO" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="0"/>
+         <Value name="IPostsDao" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="PostsDao" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="IPostsService" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="PostsService" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="IUserDao" source ="IUserDao.java" package ="kr.or.ddit.user.dao" value ="0"/>
+         <Value name="UserDao" source ="UserDao.java" package ="kr.or.ddit.user.dao" value ="0"/>
+         <Value name="UserVO" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="0"/>
+         <Value name="IUserService" source ="IUserService.java" package ="kr.or.ddit.user.service" value ="0"/>
+         <Value name="UserService" source ="UserService.java" package ="kr.or.ddit.user.service" value ="0"/>
+         <Value name="PageVO" source ="PageVO.java" package ="kr.or.ddit.util.model" value ="0"/>
+         <Value name="StringUtil" source ="StringUtil.java" package ="kr.or.ddit.util" value ="0"/>
+         <Value name="BoardServiceTest" source ="BoardServiceTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="CommDaoTest" source ="CommDaoTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="PostsDaoTest" source ="PostsDaoTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="PostsServiceTest" source ="PostsServiceTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="UserServiceTest" source ="UserServiceTest.java" package ="kr.or.ddit.db" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "LCOM" description ="Lack of Cohesion of Methods">
+      <Values per = "type" avg = "0.119" stddev = "0.298" max = "0.957">
+         <Value name="UserVO" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="0.957"/>
+         <Value name="CommVO" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="0.909"/>
+         <Value name="PostsVO" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="0.9"/>
+         <Value name="BoardVO" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="0.889"/>
+         <Value name="AttachmentsVO" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="0.8"/>
+         <Value name="PageVO" source ="PageVO.java" package ="kr.or.ddit.util.model" value ="0.667"/>
+         <Value name="AttachmentsDao" source ="AttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="0"/>
+         <Value name="IAttachmentsDao" source ="IAttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="0"/>
+         <Value name="AttachmentsService" source ="AttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="0"/>
+         <Value name="IAttachmentsService" source ="IAttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="0"/>
+         <Value name="BoardDao" source ="BoardDao.java" package ="kr.or.ddit.board.dao" value ="0"/>
+         <Value name="IBoardDao" source ="IBoardDao.java" package ="kr.or.ddit.board.dao" value ="0"/>
+         <Value name="BoardService" source ="BoardService.java" package ="kr.or.ddit.board.service" value ="0"/>
+         <Value name="IBoardService" source ="IBoardService.java" package ="kr.or.ddit.board.service" value ="0"/>
+         <Value name="BoardServlet" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="0"/>
+         <Value name="CommDao" source ="CommDao.java" package ="kr.or.ddit.comm.dao" value ="0"/>
+         <Value name="ICommDao" source ="ICommDao.java" package ="kr.or.ddit.comm.dao" value ="0"/>
+         <Value name="CommService" source ="CommService.java" package ="kr.or.ddit.comm.service" value ="0"/>
+         <Value name="ICommService" source ="ICommService.java" package ="kr.or.ddit.comm.service" value ="0"/>
+         <Value name="CommServlet" source ="CommServlet.java" package ="kr.or.ddit.comm.web" value ="0"/>
+         <Value name="SqlFactoryBuilder" source ="SqlFactoryBuilder.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="AnsiX923Padding" source ="AnsiX923Padding.java" package ="kr.or.ddit.encrypt.seed" value ="0"/>
+         <Value name="KISA_SEED_CBC" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="0"/>
+         <Value name="StringUtil" source ="StringUtil.java" package ="kr.or.ddit.encrypt.seed" value ="0"/>
+         <Value name="KISA_SHA256" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="0"/>
+         <Value name="KISA_SHA256.Common" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="0"/>
+         <Value name="KISA_SHA256.SHA256_INFO" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="0"/>
+         <Value name="LoginServlet" source ="LoginServlet.java" package ="kr.or.ddit.login" value ="0"/>
+         <Value name="IPostsDao" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="PostsDao" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="IPostsService" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="PostsService" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="PostsServlet" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="0"/>
+         <Value name="IUserDao" source ="IUserDao.java" package ="kr.or.ddit.user.dao" value ="0"/>
+         <Value name="UserDao" source ="UserDao.java" package ="kr.or.ddit.user.dao" value ="0"/>
+         <Value name="IUserService" source ="IUserService.java" package ="kr.or.ddit.user.service" value ="0"/>
+         <Value name="UserService" source ="UserService.java" package ="kr.or.ddit.user.service" value ="0"/>
+         <Value name="StringUtil" source ="StringUtil.java" package ="kr.or.ddit.util" value ="0"/>
+         <Value name="BoardServiceTest" source ="BoardServiceTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="CommDaoTest" source ="CommDaoTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="PostsDaoTest" source ="PostsDaoTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="PostsServiceTest" source ="PostsServiceTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="UserServiceTest" source ="UserServiceTest.java" package ="kr.or.ddit.db" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOF" description ="Number of Attributes">
+      <Values per = "type" total = "56" avg = "1.302" stddev = "2.529" max = "12">
+         <Value name="UserVO" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="12"/>
+         <Value name="PostsVO" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="10"/>
+         <Value name="CommVO" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="6"/>
+         <Value name="BoardVO" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="5"/>
+         <Value name="KISA_SHA256.SHA256_INFO" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="4"/>
+         <Value name="AttachmentsVO" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="3"/>
+         <Value name="PageVO" source ="PageVO.java" package ="kr.or.ddit.util.model" value ="2"/>
+         <Value name="AttachmentsService" source ="AttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="1"/>
+         <Value name="BoardService" source ="BoardService.java" package ="kr.or.ddit.board.service" value ="1"/>
+         <Value name="BoardServlet" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="1"/>
+         <Value name="CommService" source ="CommService.java" package ="kr.or.ddit.comm.service" value ="1"/>
+         <Value name="CommServlet" source ="CommServlet.java" package ="kr.or.ddit.comm.web" value ="1"/>
+         <Value name="AnsiX923Padding" source ="AnsiX923Padding.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="PostsService" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="PostsServlet" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="1"/>
+         <Value name="UserService" source ="UserService.java" package ="kr.or.ddit.user.service" value ="1"/>
+         <Value name="BoardServiceTest" source ="BoardServiceTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="CommDaoTest" source ="CommDaoTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="PostsDaoTest" source ="PostsDaoTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="PostsServiceTest" source ="PostsServiceTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="UserServiceTest" source ="UserServiceTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="AttachmentsDao" source ="AttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="0"/>
+         <Value name="IAttachmentsDao" source ="IAttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="0"/>
+         <Value name="IAttachmentsService" source ="IAttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="0"/>
+         <Value name="BoardDao" source ="BoardDao.java" package ="kr.or.ddit.board.dao" value ="0"/>
+         <Value name="IBoardDao" source ="IBoardDao.java" package ="kr.or.ddit.board.dao" value ="0"/>
+         <Value name="IBoardService" source ="IBoardService.java" package ="kr.or.ddit.board.service" value ="0"/>
+         <Value name="CommDao" source ="CommDao.java" package ="kr.or.ddit.comm.dao" value ="0"/>
+         <Value name="ICommDao" source ="ICommDao.java" package ="kr.or.ddit.comm.dao" value ="0"/>
+         <Value name="ICommService" source ="ICommService.java" package ="kr.or.ddit.comm.service" value ="0"/>
+         <Value name="SqlFactoryBuilder" source ="SqlFactoryBuilder.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="KISA_SEED_CBC" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="0"/>
+         <Value name="StringUtil" source ="StringUtil.java" package ="kr.or.ddit.encrypt.seed" value ="0"/>
+         <Value name="KISA_SHA256" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="0"/>
+         <Value name="KISA_SHA256.Common" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="0"/>
+         <Value name="LoginServlet" source ="LoginServlet.java" package ="kr.or.ddit.login" value ="0"/>
+         <Value name="IPostsDao" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="PostsDao" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="IPostsService" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="IUserDao" source ="IUserDao.java" package ="kr.or.ddit.user.dao" value ="0"/>
+         <Value name="UserDao" source ="UserDao.java" package ="kr.or.ddit.user.dao" value ="0"/>
+         <Value name="IUserService" source ="IUserService.java" package ="kr.or.ddit.user.service" value ="0"/>
+         <Value name="StringUtil" source ="StringUtil.java" package ="kr.or.ddit.util" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NSF" description ="Number of Static Attributes">
+      <Values per = "type" total = "31" avg = "0.721" stddev = "2.346" max = "12">
+         <Value name="KISA_SHA256" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="12"/>
+         <Value name="KISA_SEED_CBC" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="10"/>
+         <Value name="KISA_SHA256.Common" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="3"/>
+         <Value name="BoardServlet" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="1"/>
+         <Value name="CommServlet" source ="CommServlet.java" package ="kr.or.ddit.comm.web" value ="1"/>
+         <Value name="SqlFactoryBuilder" source ="SqlFactoryBuilder.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="AnsiX923Padding" source ="AnsiX923Padding.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="LoginServlet" source ="LoginServlet.java" package ="kr.or.ddit.login" value ="1"/>
+         <Value name="PostsServlet" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="1"/>
+         <Value name="AttachmentsDao" source ="AttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="0"/>
+         <Value name="IAttachmentsDao" source ="IAttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="0"/>
+         <Value name="AttachmentsVO" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="0"/>
+         <Value name="AttachmentsService" source ="AttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="0"/>
+         <Value name="IAttachmentsService" source ="IAttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="0"/>
+         <Value name="BoardDao" source ="BoardDao.java" package ="kr.or.ddit.board.dao" value ="0"/>
+         <Value name="IBoardDao" source ="IBoardDao.java" package ="kr.or.ddit.board.dao" value ="0"/>
+         <Value name="BoardVO" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="0"/>
+         <Value name="BoardService" source ="BoardService.java" package ="kr.or.ddit.board.service" value ="0"/>
+         <Value name="IBoardService" source ="IBoardService.java" package ="kr.or.ddit.board.service" value ="0"/>
+         <Value name="CommDao" source ="CommDao.java" package ="kr.or.ddit.comm.dao" value ="0"/>
+         <Value name="ICommDao" source ="ICommDao.java" package ="kr.or.ddit.comm.dao" value ="0"/>
+         <Value name="CommVO" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="0"/>
+         <Value name="CommService" source ="CommService.java" package ="kr.or.ddit.comm.service" value ="0"/>
+         <Value name="ICommService" source ="ICommService.java" package ="kr.or.ddit.comm.service" value ="0"/>
+         <Value name="StringUtil" source ="StringUtil.java" package ="kr.or.ddit.encrypt.seed" value ="0"/>
+         <Value name="KISA_SHA256.SHA256_INFO" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="0"/>
+         <Value name="IPostsDao" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="PostsDao" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="PostsVO" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="0"/>
+         <Value name="IPostsService" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="PostsService" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="IUserDao" source ="IUserDao.java" package ="kr.or.ddit.user.dao" value ="0"/>
+         <Value name="UserDao" source ="UserDao.java" package ="kr.or.ddit.user.dao" value ="0"/>
+         <Value name="UserVO" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="0"/>
+         <Value name="IUserService" source ="IUserService.java" package ="kr.or.ddit.user.service" value ="0"/>
+         <Value name="UserService" source ="UserService.java" package ="kr.or.ddit.user.service" value ="0"/>
+         <Value name="PageVO" source ="PageVO.java" package ="kr.or.ddit.util.model" value ="0"/>
+         <Value name="StringUtil" source ="StringUtil.java" package ="kr.or.ddit.util" value ="0"/>
+         <Value name="BoardServiceTest" source ="BoardServiceTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="CommDaoTest" source ="CommDaoTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="PostsDaoTest" source ="PostsDaoTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="PostsServiceTest" source ="PostsServiceTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="UserServiceTest" source ="UserServiceTest.java" package ="kr.or.ddit.db" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOM" description ="Number of Methods">
+      <Values per = "type" total = "184" avg = "4.279" stddev = "5.105" max = "25">
+         <Value name="UserVO" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="25"/>
+         <Value name="PostsVO" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="21"/>
+         <Value name="CommVO" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="12"/>
+         <Value name="BoardVO" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="10"/>
+         <Value name="PostsServlet" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="10"/>
+         <Value name="IPostsDao" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="8"/>
+         <Value name="PostsDao" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="8"/>
+         <Value name="IPostsService" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="8"/>
+         <Value name="PostsService" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="8"/>
+         <Value name="AttachmentsVO" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="6"/>
+         <Value name="BoardServlet" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="5"/>
+         <Value name="CommServlet" source ="CommServlet.java" package ="kr.or.ddit.comm.web" value ="4"/>
+         <Value name="PageVO" source ="PageVO.java" package ="kr.or.ddit.util.model" value ="4"/>
+         <Value name="PostsDaoTest" source ="PostsDaoTest.java" package ="kr.or.ddit.db" value ="4"/>
+         <Value name="AttachmentsDao" source ="AttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="3"/>
+         <Value name="IAttachmentsDao" source ="IAttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="3"/>
+         <Value name="AttachmentsService" source ="AttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="3"/>
+         <Value name="IAttachmentsService" source ="IAttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="3"/>
+         <Value name="BoardDao" source ="BoardDao.java" package ="kr.or.ddit.board.dao" value ="3"/>
+         <Value name="IBoardDao" source ="IBoardDao.java" package ="kr.or.ddit.board.dao" value ="3"/>
+         <Value name="BoardService" source ="BoardService.java" package ="kr.or.ddit.board.service" value ="3"/>
+         <Value name="IBoardService" source ="IBoardService.java" package ="kr.or.ddit.board.service" value ="3"/>
+         <Value name="CommDao" source ="CommDao.java" package ="kr.or.ddit.comm.dao" value ="3"/>
+         <Value name="ICommDao" source ="ICommDao.java" package ="kr.or.ddit.comm.dao" value ="3"/>
+         <Value name="CommService" source ="CommService.java" package ="kr.or.ddit.comm.service" value ="3"/>
+         <Value name="ICommService" source ="ICommService.java" package ="kr.or.ddit.comm.service" value ="3"/>
+         <Value name="LoginServlet" source ="LoginServlet.java" package ="kr.or.ddit.login" value ="2"/>
+         <Value name="BoardServiceTest" source ="BoardServiceTest.java" package ="kr.or.ddit.db" value ="2"/>
+         <Value name="CommDaoTest" source ="CommDaoTest.java" package ="kr.or.ddit.db" value ="2"/>
+         <Value name="PostsServiceTest" source ="PostsServiceTest.java" package ="kr.or.ddit.db" value ="2"/>
+         <Value name="UserServiceTest" source ="UserServiceTest.java" package ="kr.or.ddit.db" value ="2"/>
+         <Value name="AnsiX923Padding" source ="AnsiX923Padding.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="IUserDao" source ="IUserDao.java" package ="kr.or.ddit.user.dao" value ="1"/>
+         <Value name="UserDao" source ="UserDao.java" package ="kr.or.ddit.user.dao" value ="1"/>
+         <Value name="IUserService" source ="IUserService.java" package ="kr.or.ddit.user.service" value ="1"/>
+         <Value name="UserService" source ="UserService.java" package ="kr.or.ddit.user.service" value ="1"/>
+         <Value name="SqlFactoryBuilder" source ="SqlFactoryBuilder.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="KISA_SEED_CBC" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="0"/>
+         <Value name="StringUtil" source ="StringUtil.java" package ="kr.or.ddit.encrypt.seed" value ="0"/>
+         <Value name="KISA_SHA256" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="0"/>
+         <Value name="KISA_SHA256.Common" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="0"/>
+         <Value name="KISA_SHA256.SHA256_INFO" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="0"/>
+         <Value name="StringUtil" source ="StringUtil.java" package ="kr.or.ddit.util" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NSM" description ="Number of Static Methods">
+      <Values per = "type" total = "63" avg = "1.465" stddev = "4.761" max = "21">
+         <Value name="KISA_SHA256" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="21"/>
+         <Value name="KISA_SEED_CBC" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="18"/>
+         <Value name="KISA_SHA256.Common" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="17"/>
+         <Value name="AnsiX923Padding" source ="AnsiX923Padding.java" package ="kr.or.ddit.encrypt.seed" value ="2"/>
+         <Value name="StringUtil" source ="StringUtil.java" package ="kr.or.ddit.encrypt.seed" value ="2"/>
+         <Value name="StringUtil" source ="StringUtil.java" package ="kr.or.ddit.util" value ="2"/>
+         <Value name="SqlFactoryBuilder" source ="SqlFactoryBuilder.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="AttachmentsDao" source ="AttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="0"/>
+         <Value name="IAttachmentsDao" source ="IAttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="0"/>
+         <Value name="AttachmentsVO" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="0"/>
+         <Value name="AttachmentsService" source ="AttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="0"/>
+         <Value name="IAttachmentsService" source ="IAttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="0"/>
+         <Value name="BoardDao" source ="BoardDao.java" package ="kr.or.ddit.board.dao" value ="0"/>
+         <Value name="IBoardDao" source ="IBoardDao.java" package ="kr.or.ddit.board.dao" value ="0"/>
+         <Value name="BoardVO" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="0"/>
+         <Value name="BoardService" source ="BoardService.java" package ="kr.or.ddit.board.service" value ="0"/>
+         <Value name="IBoardService" source ="IBoardService.java" package ="kr.or.ddit.board.service" value ="0"/>
+         <Value name="BoardServlet" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="0"/>
+         <Value name="CommDao" source ="CommDao.java" package ="kr.or.ddit.comm.dao" value ="0"/>
+         <Value name="ICommDao" source ="ICommDao.java" package ="kr.or.ddit.comm.dao" value ="0"/>
+         <Value name="CommVO" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="0"/>
+         <Value name="CommService" source ="CommService.java" package ="kr.or.ddit.comm.service" value ="0"/>
+         <Value name="ICommService" source ="ICommService.java" package ="kr.or.ddit.comm.service" value ="0"/>
+         <Value name="CommServlet" source ="CommServlet.java" package ="kr.or.ddit.comm.web" value ="0"/>
+         <Value name="KISA_SHA256.SHA256_INFO" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="0"/>
+         <Value name="LoginServlet" source ="LoginServlet.java" package ="kr.or.ddit.login" value ="0"/>
+         <Value name="IPostsDao" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="PostsDao" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="PostsVO" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="0"/>
+         <Value name="IPostsService" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="PostsService" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="PostsServlet" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="0"/>
+         <Value name="IUserDao" source ="IUserDao.java" package ="kr.or.ddit.user.dao" value ="0"/>
+         <Value name="UserDao" source ="UserDao.java" package ="kr.or.ddit.user.dao" value ="0"/>
+         <Value name="UserVO" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="0"/>
+         <Value name="IUserService" source ="IUserService.java" package ="kr.or.ddit.user.service" value ="0"/>
+         <Value name="UserService" source ="UserService.java" package ="kr.or.ddit.user.service" value ="0"/>
+         <Value name="PageVO" source ="PageVO.java" package ="kr.or.ddit.util.model" value ="0"/>
+         <Value name="BoardServiceTest" source ="BoardServiceTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="CommDaoTest" source ="CommDaoTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="PostsDaoTest" source ="PostsDaoTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="PostsServiceTest" source ="PostsServiceTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="UserServiceTest" source ="UserServiceTest.java" package ="kr.or.ddit.db" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "SIX" description ="Specialization Index">
+      <Values per = "type" avg = "0.148" stddev = "0.531" max = "3">
+         <Value name="LoginServlet" source ="LoginServlet.java" package ="kr.or.ddit.login" value ="3"/>
+         <Value name="CommServlet" source ="CommServlet.java" package ="kr.or.ddit.comm.web" value ="1.5"/>
+         <Value name="BoardServlet" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="1.2"/>
+         <Value name="PostsServlet" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="0.6"/>
+         <Value name="PostsVO" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="0.048"/>
+         <Value name="AttachmentsDao" source ="AttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="0"/>
+         <Value name="IAttachmentsDao" source ="IAttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="0"/>
+         <Value name="AttachmentsVO" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="0"/>
+         <Value name="AttachmentsService" source ="AttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="0"/>
+         <Value name="IAttachmentsService" source ="IAttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="0"/>
+         <Value name="BoardDao" source ="BoardDao.java" package ="kr.or.ddit.board.dao" value ="0"/>
+         <Value name="IBoardDao" source ="IBoardDao.java" package ="kr.or.ddit.board.dao" value ="0"/>
+         <Value name="BoardVO" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="0"/>
+         <Value name="BoardService" source ="BoardService.java" package ="kr.or.ddit.board.service" value ="0"/>
+         <Value name="IBoardService" source ="IBoardService.java" package ="kr.or.ddit.board.service" value ="0"/>
+         <Value name="CommDao" source ="CommDao.java" package ="kr.or.ddit.comm.dao" value ="0"/>
+         <Value name="ICommDao" source ="ICommDao.java" package ="kr.or.ddit.comm.dao" value ="0"/>
+         <Value name="CommVO" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="0"/>
+         <Value name="CommService" source ="CommService.java" package ="kr.or.ddit.comm.service" value ="0"/>
+         <Value name="ICommService" source ="ICommService.java" package ="kr.or.ddit.comm.service" value ="0"/>
+         <Value name="SqlFactoryBuilder" source ="SqlFactoryBuilder.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="AnsiX923Padding" source ="AnsiX923Padding.java" package ="kr.or.ddit.encrypt.seed" value ="0"/>
+         <Value name="KISA_SEED_CBC" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="0"/>
+         <Value name="StringUtil" source ="StringUtil.java" package ="kr.or.ddit.encrypt.seed" value ="0"/>
+         <Value name="KISA_SHA256" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="0"/>
+         <Value name="KISA_SHA256.Common" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="0"/>
+         <Value name="KISA_SHA256.SHA256_INFO" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="0"/>
+         <Value name="IPostsDao" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="PostsDao" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="IPostsService" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="PostsService" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="IUserDao" source ="IUserDao.java" package ="kr.or.ddit.user.dao" value ="0"/>
+         <Value name="UserDao" source ="UserDao.java" package ="kr.or.ddit.user.dao" value ="0"/>
+         <Value name="UserVO" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="0"/>
+         <Value name="IUserService" source ="IUserService.java" package ="kr.or.ddit.user.service" value ="0"/>
+         <Value name="UserService" source ="UserService.java" package ="kr.or.ddit.user.service" value ="0"/>
+         <Value name="PageVO" source ="PageVO.java" package ="kr.or.ddit.util.model" value ="0"/>
+         <Value name="StringUtil" source ="StringUtil.java" package ="kr.or.ddit.util" value ="0"/>
+         <Value name="BoardServiceTest" source ="BoardServiceTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="CommDaoTest" source ="CommDaoTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="PostsDaoTest" source ="PostsDaoTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="PostsServiceTest" source ="PostsServiceTest.java" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="UserServiceTest" source ="UserServiceTest.java" package ="kr.or.ddit.db" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOC" description ="Number of Classes">
+      <Values per = "packageFragment" total = "43" avg = "1.72" stddev = "0.917" max = "5">
+         <Value name="kr.or.ddit.db" package ="kr.or.ddit.db" value ="5"/>
+         <Value name="kr.or.ddit.encrypt.seed" package ="kr.or.ddit.encrypt.seed" value ="3"/>
+         <Value name="kr.or.ddit.encrypt.sha" package ="kr.or.ddit.encrypt.sha" value ="3"/>
+         <Value name="kr.or.ddit.attachments.dao" package ="kr.or.ddit.attachments.dao" value ="2"/>
+         <Value name="kr.or.ddit.attachments.service" package ="kr.or.ddit.attachments.service" value ="2"/>
+         <Value name="kr.or.ddit.board.dao" package ="kr.or.ddit.board.dao" value ="2"/>
+         <Value name="kr.or.ddit.board.service" package ="kr.or.ddit.board.service" value ="2"/>
+         <Value name="kr.or.ddit.comm.dao" package ="kr.or.ddit.comm.dao" value ="2"/>
+         <Value name="kr.or.ddit.comm.service" package ="kr.or.ddit.comm.service" value ="2"/>
+         <Value name="kr.or.ddit.posts.dao" package ="kr.or.ddit.posts.dao" value ="2"/>
+         <Value name="kr.or.ddit.posts.service" package ="kr.or.ddit.posts.service" value ="2"/>
+         <Value name="kr.or.ddit.user.dao" package ="kr.or.ddit.user.dao" value ="2"/>
+         <Value name="kr.or.ddit.user.service" package ="kr.or.ddit.user.service" value ="2"/>
+         <Value name="kr.or.ddit.attachments.model" package ="kr.or.ddit.attachments.model" value ="1"/>
+         <Value name="kr.or.ddit.board.model" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="kr.or.ddit.board.web" package ="kr.or.ddit.board.web" value ="1"/>
+         <Value name="kr.or.ddit.comm.model" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="kr.or.ddit.comm.web" package ="kr.or.ddit.comm.web" value ="1"/>
+         <Value name="kr.or.ddit.db" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="kr.or.ddit.login" package ="kr.or.ddit.login" value ="1"/>
+         <Value name="kr.or.ddit.posts.model" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="kr.or.ddit.posts.web" package ="kr.or.ddit.posts.web" value ="1"/>
+         <Value name="kr.or.ddit.user.model" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="kr.or.ddit.util" package ="kr.or.ddit.util" value ="1"/>
+         <Value name="kr.or.ddit.util.model" package ="kr.or.ddit.util.model" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOI" description ="Number of Interfaces">
+      <Values per = "packageFragment" total = "10" avg = "0.4" stddev = "0.49" max = "1">
+         <Value name="kr.or.ddit.attachments.dao" package ="kr.or.ddit.attachments.dao" value ="1"/>
+         <Value name="kr.or.ddit.attachments.service" package ="kr.or.ddit.attachments.service" value ="1"/>
+         <Value name="kr.or.ddit.board.dao" package ="kr.or.ddit.board.dao" value ="1"/>
+         <Value name="kr.or.ddit.board.service" package ="kr.or.ddit.board.service" value ="1"/>
+         <Value name="kr.or.ddit.comm.dao" package ="kr.or.ddit.comm.dao" value ="1"/>
+         <Value name="kr.or.ddit.comm.service" package ="kr.or.ddit.comm.service" value ="1"/>
+         <Value name="kr.or.ddit.posts.dao" package ="kr.or.ddit.posts.dao" value ="1"/>
+         <Value name="kr.or.ddit.posts.service" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="kr.or.ddit.user.dao" package ="kr.or.ddit.user.dao" value ="1"/>
+         <Value name="kr.or.ddit.user.service" package ="kr.or.ddit.user.service" value ="1"/>
+         <Value name="kr.or.ddit.attachments.model" package ="kr.or.ddit.attachments.model" value ="0"/>
+         <Value name="kr.or.ddit.board.model" package ="kr.or.ddit.board.model" value ="0"/>
+         <Value name="kr.or.ddit.board.web" package ="kr.or.ddit.board.web" value ="0"/>
+         <Value name="kr.or.ddit.comm.model" package ="kr.or.ddit.comm.model" value ="0"/>
+         <Value name="kr.or.ddit.comm.web" package ="kr.or.ddit.comm.web" value ="0"/>
+         <Value name="kr.or.ddit.db" package ="kr.or.ddit.db" value ="0"/>
+         <Value name="kr.or.ddit.encrypt.seed" package ="kr.or.ddit.encrypt.seed" value ="0"/>
+         <Value name="kr.or.ddit.encrypt.sha" package ="kr.or.ddit.encrypt.sha" value ="0"/>
+         <Value name="kr.or.ddit.login" package ="kr.or.ddit.login" value ="0"/>
+         <Value name="kr.or.ddit.posts.model" package ="kr.or.ddit.posts.model" value ="0"/>
+         <Value name="kr.or.ddit.posts.web" package ="kr.or.ddit.posts.web" value ="0"/>
+         <Value name="kr.or.ddit.user.model" package ="kr.or.ddit.user.model" value ="0"/>
+         <Value name="kr.or.ddit.util" package ="kr.or.ddit.util" value ="0"/>
+         <Value name="kr.or.ddit.util.model" package ="kr.or.ddit.util.model" value ="0"/>
+         <Value name="kr.or.ddit.db" package ="kr.or.ddit.db" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOP" description ="Number of Packages">
+      <Value value="25"/>
+   </Metric>
+   <Metric id = "TLOC" description ="Total Lines of Code">
+      <Value value="2349"/>
+   </Metric>
+   <Metric id = "MLOC" description ="Method Lines of Code">
+      <Values per = "method" total = "1284" avg = "5.22" stddev = "14.263" max = "126">
+         <Value name="SeedRoundKey" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="126"/>
+         <Value name="SeedDecrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="116"/>
+         <Value name="SeedEncrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="116"/>
+         <Value name="postsUpdate" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="39"/>
+         <Value name="addPostsForm" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="38"/>
+         <Value name="Encrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="37"/>
+         <Value name="SHA256_Transform" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="35"/>
+         <Value name="main" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="32"/>
+         <Value name="doPost" source ="LoginServlet.java" package ="kr.or.ddit.login" value ="32"/>
+         <Value name="Decrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="23"/>
+         <Value name="removePadding" source ="AnsiX923Padding.java" package ="kr.or.ddit.encrypt.seed" value ="22"/>
+         <Value name="SHA256_Close" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="20"/>
+         <Value name="postsPageList" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="19"/>
+         <Value name="SeedRound" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="17"/>
+         <Value name="boardUpdate" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="16"/>
+         <Value name="insertChildPosts" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="16"/>
+         <Value name="boardInsert" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="15"/>
+         <Value name="addPadding" source ="AnsiX923Padding.java" package ="kr.or.ddit.encrypt.seed" value ="14"/>
+         <Value name="Decrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="14"/>
+         <Value name="KISA_SHA256.Common#set_byte_for_int" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="13"/>
+         <Value name="SHA256_Process" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="13"/>
+         <Value name="doPost" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="12"/>
+         <Value name="postsDetail" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="12"/>
+         <Value name="addComm" source ="CommServlet.java" package ="kr.or.ddit.comm.web" value ="11"/>
+         <Value name="EncRoundKeyUpdate0" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="11"/>
+         <Value name="EncRoundKeyUpdate1" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="11"/>
+         <Value name="KISA_SHA256.Common#get_byte_for_int" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="11"/>
+         <Value name="KISA_SHA256.Common#int_to_byte_unit" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="11"/>
+         <Value name="postsPageListTest" source ="PostsDaoTest.java" package ="kr.or.ddit.db" value ="10"/>
+         <Value name="SHA256_Init" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="9"/>
+         <Value name="postsPageList" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="9"/>
+         <Value name="updatePosts" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="9"/>
+         <Value name="doGet" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="8"/>
+         <Value name="getCookie" source ="StringUtil.java" package ="kr.or.ddit.util" value ="8"/>
+         <Value name="getFileName" source ="StringUtil.java" package ="kr.or.ddit.util" value ="8"/>
+         <Value name="doPost" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="7"/>
+         <Value name="KISA_SHA256.Common#URShift" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="7"/>
+         <Value name="postsUpdateForm" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="7"/>
+         <Value name="deleteAtta" source ="AttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="6"/>
+         <Value name="insertAtta" source ="AttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="6"/>
+         <Value name="insertBoard" source ="BoardDao.java" package ="kr.or.ddit.board.dao" value ="6"/>
+         <Value name="updateBoard" source ="BoardDao.java" package ="kr.or.ddit.board.dao" value ="6"/>
+         <Value name="insertComm" source ="CommDao.java" package ="kr.or.ddit.comm.dao" value ="6"/>
+         <Value name="updateComm" source ="CommDao.java" package ="kr.or.ddit.comm.dao" value ="6"/>
+         <Value name="updateComm" source ="CommServlet.java" package ="kr.or.ddit.comm.web" value ="6"/>
+         <Value name="main" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="6"/>
+         <Value name="KISA_SHA256.Common#get_bytes_for_ints" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="6"/>
+         <Value name="encrypt" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="6"/>
+         <Value name="insertChildPosts" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="6"/>
+         <Value name="insertParentPosts" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="6"/>
+         <Value name="updatePosts" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="6"/>
+         <Value name="updateUse" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="6"/>
+         <Value name="selectAtta" source ="AttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="5"/>
+         <Value name="selectAllBoard" source ="BoardDao.java" package ="kr.or.ddit.board.dao" value ="5"/>
+         <Value name="selectComm" source ="CommDao.java" package ="kr.or.ddit.comm.dao" value ="5"/>
+         <Value name="SeedEncrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="5"/>
+         <Value name="addZero" source ="StringUtil.java" package ="kr.or.ddit.encrypt.seed" value ="5"/>
+         <Value name="isEmpty" source ="StringUtil.java" package ="kr.or.ddit.encrypt.seed" value ="5"/>
+         <Value name="KISA_SHA256.Common#byte_to_int" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="5"/>
+         <Value name="KISA_SHA256.Common#byte_to_int" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="5"/>
+         <Value name="getPostsDetail" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="5"/>
+         <Value name="maxPosts" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="5"/>
+         <Value name="postsCnt" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="5"/>
+         <Value name="postsPageList" source ="PostsDao.java" package ="kr.or.ddit.posts.dao" value ="5"/>
+         <Value name="toString" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="5"/>
+         <Value name="updateAttachFile" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="5"/>
+         <Value name="updateUse" source ="PostsServlet.java" package ="kr.or.ddit.posts.web" value ="5"/>
+         <Value name="selectUser" source ="UserDao.java" package ="kr.or.ddit.user.dao" value ="5"/>
+         <Value name="goMain" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="4"/>
+         <Value name="doGet" source ="CommServlet.java" package ="kr.or.ddit.comm.web" value ="4"/>
+         <Value name="doPost" source ="CommServlet.java" package ="kr.or.ddit.comm.web" value ="4"/>
+         <Value name="KISA_SHA256.Common#int_to_byte_unit_big_endian" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="4"/>
+         <Value name="KISA_SHA256.Common#memcpy" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="4"/>
+         <Value name="KISA_SHA256.Common#memcpy" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="4"/>
+         <Value name="FF" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="4"/>
+         <Value name="SHA256_Encrpyt" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="4"/>
+         <Value name="getPostsDetailTest" source ="PostsDaoTest.java" package ="kr.or.ddit.db" value ="4"/>
+         <Value name="KISA_SHA256.Common#arraycopy_offset" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="3"/>
+         <Value name="KISA_SHA256.Common#arraycopy" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="3"/>
+         <Value name="KISA_SHA256.Common#arrayinit_offset" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="3"/>
+         <Value name="KISA_SHA256.Common#arrayinit" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="3"/>
+         <Value name="KISA_SHA256.Common#intToUnsigned" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="3"/>
+         <Value name="doGet" source ="LoginServlet.java" package ="kr.or.ddit.login" value ="3"/>
+         <Value name="selectCommTest" source ="CommDaoTest.java" package ="kr.or.ddit.db" value ="3"/>
+         <Value name="selectAllBoardTest" source ="BoardServiceTest.java" package ="kr.or.ddit.db" value ="2"/>
+         <Value name="postsCntTest" source ="PostsDaoTest.java" package ="kr.or.ddit.db" value ="2"/>
+         <Value name="maxPostsTest" source ="PostsServiceTest.java" package ="kr.or.ddit.db" value ="2"/>
+         <Value name="selectUserTest" source ="UserServiceTest.java" package ="kr.or.ddit.db" value ="2"/>
+         <Value name="getAtta_file" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="1"/>
+         <Value name="getAtta_no" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="1"/>
+         <Value name="getPosts_no" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="1"/>
+         <Value name="setAtta_file" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="1"/>
+         <Value name="setAtta_no" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="1"/>
+         <Value name="setPosts_no" source ="AttachmentsVO.java" package ="kr.or.ddit.attachments.model" value ="1"/>
+         <Value name="deleteAtta" source ="AttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="1"/>
+         <Value name="insertAtta" source ="AttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="1"/>
+         <Value name="selectAtta" source ="AttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="1"/>
+         <Value name="getBoard_date" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="getBoard_id" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="getBoard_name" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="getBoard_yn" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="getUserId" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="setBoard_date" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="setBoard_id" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="setBoard_name" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="setBoard_yn" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="setUserId" source ="BoardVO.java" package ="kr.or.ddit.board.model" value ="1"/>
+         <Value name="insertBoard" source ="BoardService.java" package ="kr.or.ddit.board.service" value ="1"/>
+         <Value name="selectAllBoard" source ="BoardService.java" package ="kr.or.ddit.board.service" value ="1"/>
+         <Value name="updateBoard" source ="BoardService.java" package ="kr.or.ddit.board.service" value ="1"/>
+         <Value name="getComm_cnt" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="getComm_date" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="getComm_id" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="getComm_use" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="getPosts_no" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="getUserid" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="setComm_cnt" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="setComm_date" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="setComm_id" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="setComm_use" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="setPosts_no" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="setUserid" source ="CommVO.java" package ="kr.or.ddit.comm.model" value ="1"/>
+         <Value name="insertComm" source ="CommService.java" package ="kr.or.ddit.comm.service" value ="1"/>
+         <Value name="selectComm" source ="CommService.java" package ="kr.or.ddit.comm.service" value ="1"/>
+         <Value name="updateComm" source ="CommService.java" package ="kr.or.ddit.comm.service" value ="1"/>
+         <Value name="getSqlSessionFactory" source ="SqlFactoryBuilder.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="getName" source ="AnsiX923Padding.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="EndianChange" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="GetB0" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="GetB1" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="GetB2" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="GetB3" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="SeedEncrypt" source ="KISA_SEED_CBC.java" package ="kr.or.ddit.encrypt.seed" value ="1"/>
+         <Value name="KISA_SHA256.Common#byte_to_int_big_endian" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="KISA_SHA256.Common#int_to_byte" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="BIG_D2B" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="Ch" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="ENDIAN_REVERSE_ULONG" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="GetData" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="Maj" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="RHO0" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="RHO1" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="ROTL_ULONG" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="ROTR_ULONG" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="RR" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="SS" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="Sigma0" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="Sigma1" source ="KISA_SHA256.java" package ="kr.or.ddit.encrypt.sha" value ="1"/>
+         <Value name="getBoard_id" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getGroup_no" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getPosts_cnt" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getPosts_date" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getPosts_hno" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getPosts_no" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getPosts_title" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getPosts_use" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getRnum" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getUserid" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setBoard_id" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setGroup_no" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setPosts_cnt" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setPosts_date" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setPosts_hno" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setPosts_no" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setPosts_title" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setPosts_use" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setRnum" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="setUserid" source ="PostsVO.java" package ="kr.or.ddit.posts.model" value ="1"/>
+         <Value name="getPostsDetail" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="insertChildPosts" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="insertParentPosts" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="maxPosts" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="postsCnt" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="updateUse" source ="PostsService.java" package ="kr.or.ddit.posts.service" value ="1"/>
+         <Value name="authPass" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getAddr1" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getAddr2" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getAlias" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getBirth" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getEmail" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getName" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getPass" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getProfile" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getRnum" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getTel" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getUserId" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="getZipcd" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setAddr1" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setAddr2" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setAlias" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setBirth" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setEmail" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setName" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setPass" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setProfile" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setRnum" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setTel" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setUserId" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="setZipcd" source ="UserVO.java" package ="kr.or.ddit.user.model" value ="1"/>
+         <Value name="selectUser" source ="UserService.java" package ="kr.or.ddit.user.service" value ="1"/>
+         <Value name="getPage" source ="PageVO.java" package ="kr.or.ddit.util.model" value ="1"/>
+         <Value name="getPageSize" source ="PageVO.java" package ="kr.or.ddit.util.model" value ="1"/>
+         <Value name="setPageSize" source ="PageVO.java" package ="kr.or.ddit.util.model" value ="1"/>
+         <Value name="setPage" source ="PageVO.java" package ="kr.or.ddit.util.model" value ="1"/>
+         <Value name="setup" source ="BoardServiceTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="setup" source ="CommDaoTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="setup" source ="PostsDaoTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="setup" source ="PostsServiceTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="setup" source ="UserServiceTest.java" package ="kr.or.ddit.db" value ="1"/>
+         <Value name="deleteAtta" source ="IAttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="0"/>
+         <Value name="insertAtta" source ="IAttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="0"/>
+         <Value name="selectAtta" source ="IAttachmentsDao.java" package ="kr.or.ddit.attachments.dao" value ="0"/>
+         <Value name="deleteAtta" source ="IAttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="0"/>
+         <Value name="insertAtta" source ="IAttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="0"/>
+         <Value name="selectAtta" source ="IAttachmentsService.java" package ="kr.or.ddit.attachments.service" value ="0"/>
+         <Value name="insertBoard" source ="IBoardDao.java" package ="kr.or.ddit.board.dao" value ="0"/>
+         <Value name="selectAllBoard" source ="IBoardDao.java" package ="kr.or.ddit.board.dao" value ="0"/>
+         <Value name="updateBoard" source ="IBoardDao.java" package ="kr.or.ddit.board.dao" value ="0"/>
+         <Value name="insertBoard" source ="IBoardService.java" package ="kr.or.ddit.board.service" value ="0"/>
+         <Value name="selectAllBoard" source ="IBoardService.java" package ="kr.or.ddit.board.service" value ="0"/>
+         <Value name="updateBoard" source ="IBoardService.java" package ="kr.or.ddit.board.service" value ="0"/>
+         <Value name="doGet" source ="BoardServlet.java" package ="kr.or.ddit.board.web" value ="0"/>
+         <Value name="insertComm" source ="ICommDao.java" package ="kr.or.ddit.comm.dao" value ="0"/>
+         <Value name="selectComm" source ="ICommDao.java" package ="kr.or.ddit.comm.dao" value ="0"/>
+         <Value name="updateComm" source ="ICommDao.java" package ="kr.or.ddit.comm.dao" value ="0"/>
+         <Value name="insertComm" source ="ICommService.java" package ="kr.or.ddit.comm.service" value ="0"/>
+         <Value name="selectComm" source ="ICommService.java" package ="kr.or.ddit.comm.service" value ="0"/>
+         <Value name="updateComm" source ="ICommService.java" package ="kr.or.ddit.comm.service" value ="0"/>
+         <Value name="getPostsDetail" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="insertChildPosts" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="insertParentPosts" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="maxPosts" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="postsCnt" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="postsPageList" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="updatePosts" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="updateUse" source ="IPostsDao.java" package ="kr.or.ddit.posts.dao" value ="0"/>
+         <Value name="getPostsDetail" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="insertChildPosts" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="insertParentPosts" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="maxPosts" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="postsCnt" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="postsPageList" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="updatePosts" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="updateUse" source ="IPostsService.java" package ="kr.or.ddit.posts.service" value ="0"/>
+         <Value name="selectUser" source ="IUserDao.java" package ="kr.or.ddit.user.dao" value ="0"/>
+         <Value name="selectUser" source ="IUserService.java" package ="kr.or.ddit.user.service" value ="0"/>
+      </Values>
+   </Metric>
+   </Metrics>
